@@ -8,22 +8,17 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1313/home/home/</loc>
     <lastmod>2015-01-23T12:43:09+05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/xfast/</loc>
+    <loc>http://localhost:1313/posts/xfast/</loc>
     <lastmod>2013-12-01T08:36:54-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/mini-cv/</loc>
-    <lastmod>2013-05-20T08:36:54-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/flaky/</loc>
+    <loc>http://localhost:1313/posts/floating-point/</loc>
     <lastmod>2013-05-20T08:36:54-07:00</lastmod>
   </url>
   

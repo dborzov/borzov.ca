@@ -50,9 +50,9 @@
   <span class="post-date">Mon, May 20, 2013</span>
       
 
-<h1 id="floating-point-considered-harmful:e8456fad07eaa3dc56ccc5cbd755a010">Floating-point considered harmful</h1>
+<h1 id="floating-point-considered-harmful:8b3822e7aabbd2c466e5591b1aa4f6cb">Floating-point considered harmful</h1>
 
-<h3 id="abstract-modern-datatypes-for-quantities-such-as-length-time-or-a-number-should-employ-ideas-from-the-functional-programming-keep-track-of-when-the-rounding-errors-arise-support-defining-with-functions-represent-results-appropriately-to-the-context-flaky-an-open-source-framework-wants-to-make-things-right:e8456fad07eaa3dc56ccc5cbd755a010"><em>Abstract:</em> Modern datatypes for quantities (such as length, time or a number) should employ ideas from the functional programming: keep track of when the rounding errors arise,  support defining with functions, represent results appropriately to the context. Flaky, an open source framework, wants to make things right.</h3>
+<h3 id="abstract-modern-datatypes-for-quantities-such-as-length-time-or-a-number-should-employ-ideas-from-the-functional-programming-keep-track-of-when-the-rounding-errors-arise-support-defining-with-functions-represent-results-appropriately-to-the-context-flaky-an-open-source-framework-wants-to-make-things-right:8b3822e7aabbd2c466e5591b1aa4f6cb"><em>Abstract:</em> Modern datatypes for quantities (such as length, time or a number) should employ ideas from the functional programming: keep track of when the rounding errors arise,  support defining with functions, represent results appropriately to the context. Flaky, an open source framework, wants to make things right.</h3>
 
 <p><a href="https://en.wikipedia.org/wiki/Floating_point">Floating point datatype</a> is the de-facto standard for real world quantities. Whether it is your GPS coordinates or sizes of the bridge nearby (likely designed in AutoCAD), this datatype lies in the foundation of every system. Since its introduction in the dawn of computing, floating point was accepted almost universally.</p>
 
@@ -62,11 +62,11 @@
 
 <p>In the first section we will glance at illustrating cases of when floating point breaks and try to understand what flaws should be addressed. We then look at other initiatives in this space. Finally, I introduce the design that I came up with for Flaky.</p>
 
-<h2 id="when-floating-point-fails:e8456fad07eaa3dc56ccc5cbd755a010">When floating point fails</h2>
+<h2 id="when-floating-point-fails:8b3822e7aabbd2c466e5591b1aa4f6cb">When floating point fails</h2>
 
 <p>Let us consider illustrative cases of when floating point representation leads to dramatically wrong answers.</p>
 
-<h4 id="accumulating-errors:e8456fad07eaa3dc56ccc5cbd755a010">Accumulating errors</h4>
+<h4 id="accumulating-errors:8b3822e7aabbd2c466e5591b1aa4f6cb">Accumulating errors</h4>
 
 <p>Well, this one is obvious. When the number cannot be represented exactly, it has to be rounded up. These rounding errors can accumulate and can lead to silly results.</p>
 
@@ -112,7 +112,7 @@ with 60 iterations, we get 1.0
 
 <p>The lack of the uncertainty estimation defeats the whole purpose of any computation.</p>
 
-<h4 id="the-quadratic-equation:e8456fad07eaa3dc56ccc5cbd755a010">The quadratic equation</h4>
+<h4 id="the-quadratic-equation:8b3822e7aabbd2c466e5591b1aa4f6cb">The quadratic equation</h4>
 
 <p>Even writing a program that solves the quadratic equation
 for arbitrary constant values is a serious task.
@@ -131,7 +131,7 @@ For the general case implementation, we must treat each marginal case separately
 
 <p>Quadratic equation is the simplest case of the numerical problem imaginable. Yet even here we see that one needs to manually implement basic calculus logic behind the known solution.</p>
 
-<h4 id="scaling-does-not-match-the-problem:e8456fad07eaa3dc56ccc5cbd755a010">Scaling does not match the problem</h4>
+<h4 id="scaling-does-not-match-the-problem:8b3822e7aabbd2c466e5591b1aa4f6cb">Scaling does not match the problem</h4>
 
 <p>Let us once again consider the quadratic equation, but this time in terms of the new variable we introduce
 [
@@ -171,7 +171,7 @@ and express the whole problem and the solution in terms of z.</p>
 
 <p>However, it would have been helpful if it was possible to tweak the scaling used without too much hassle.</p>
 
-<h4 id="summary:e8456fad07eaa3dc56ccc5cbd755a010">Summary</h4>
+<h4 id="summary:8b3822e7aabbd2c466e5591b1aa4f6cb">Summary</h4>
 
 <p>Here is how the new quantity datatypes could be better:</p>
 
@@ -181,7 +181,7 @@ and express the whole problem and the solution in terms of z.</p>
 <li>Datatype representation scaling should match the problem at hand and not be fixed. Tools must exist to do this with ease.</li>
 </ul>
 
-<h2 id="doing-things-right:e8456fad07eaa3dc56ccc5cbd755a010">Doing things right</h2>
+<h2 id="doing-things-right:8b3822e7aabbd2c466e5591b1aa4f6cb">Doing things right</h2>
 
 <blockquote>
 <p>An infinite number of mathematicians walk into a bar. The first orders a beer. The second orders half a beer. The third orders a quarter of a beer. Before the next one can order, the bartender says, “You’re all assholes,” and pours two beers. <a href="http://www.komplexify.com/math/jokes/MathWalksIntoABar3.html">TE</a></p>
@@ -189,7 +189,7 @@ and express the whole problem and the solution in terms of z.</p>
 
 <p>Now we let us discuss the solutions that can fix these issues.</p>
 
-<h4 id="what-is-out-there:e8456fad07eaa3dc56ccc5cbd755a010">What is out there.</h4>
+<h4 id="what-is-out-there:8b3822e7aabbd2c466e5591b1aa4f6cb">What is out there.</h4>
 
 <p>Apparently, the best way to approach the problem is to use the functional programming concepts. To retain the analytical expression used for the value definition, at least to some limit, and to have tools to change it when needed.</p>
 
@@ -198,7 +198,7 @@ Too bad that for the non-technical reasons it is apparently destined to go into 
 
 <p>Another example when things seem to be done right is the <a href="http://sympy.org/en/index.html">SymPy</a>, a Python package for symbolic computations. Functional number representation is very solid. It is important to note, however, that the goal of the project is to make tools for symbolic calculations, not to create a viable alternative to the floating point.</p>
 
-<h4 id="why-not-flaky:e8456fad07eaa3dc56ccc5cbd755a010">Why not flaky.</h4>
+<h4 id="why-not-flaky:8b3822e7aabbd2c466e5591b1aa4f6cb">Why not flaky.</h4>
 
 <p>So we saw how to make things better and why we should. These reasons compelled me start Flaky, the open-source project for quantity datatype based on the concepts of functional programming.</p>
 

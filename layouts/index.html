@@ -18,12 +18,9 @@
       </div>
       <div class="body">
 
-  <h1 class="title">Peter Borzov</h1>
-
-
-
-  <p>Hi, I am Peter and here is where I keep my random stuff. </p>
-
+  {{ range where .Data.Pages "Section" "home" }}
+     {{ .Content}}
+  {{ end }}
 
 
 
