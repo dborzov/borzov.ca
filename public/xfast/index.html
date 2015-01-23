@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title> Predecessor search for Big Data: x-fast tries, locality of reference and all that &middot; my new hugo site </title>
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/poole.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/syntax.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="my new hugo site" />
+</head>
+
+<body>
+
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>my new hugo site</h1>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <ul class="sidebar-nav">
+      <li><a href="/">Home</a> </li>
+      
+    </ul>
+
+    <p>&copy; 2015. All rights reserved. </p>
+  </div>
+</div>
+
+
+    <div class="content container">
+<div class="post">
+  <h1>Predecessor search for Big Data: x-fast tries, locality of reference and all that</h1>
+  <span class="post-date">Sun, Dec 1, 2013</span>
+      
+
+<h1 id="predecessor-search-for-big-data-x-fast-tries-locality-of-reference-and-all-that:58b12276bf0ae383f71846d6c29edb1d">Predecessor search for Big Data: x-fast tries, locality of reference and all that</h1>
+
+<h3 id="abstract-we-get-a-bird-eye-view-on-the-fascinating-field-of-the-locality-of-reference-type-of-problems-and-then-get-practical-and-solve-our-toy-problem-by-implementing-an-x-fast-trie-in-python:58b12276bf0ae383f71846d6c29edb1d"><em>Abstract:</em> We get a bird eye view on the fascinating field of the locality of reference-type of problems and then get practical and solve our toy problem by implementing an x-fast trie in Python.</h3>
+
+<p>Imagine you are developing a flight search website. You need to build a tailored search index that is really good at one task: for the given date and search criteria returns the list of the next flights. How is it better to approach designing this?</p>
+
+<p>This is an example of encountering predecessor/successor search problem in practice. Predecessor/successor search (or predecessor search for &lsquo;short&rsquo;) stands for cases when we have some dictionary (<em>in our case, the flight timetable</em>) with its keys (<em>departure times</em>) making up a subset of some ordered sequence (<em>like all minutes in the time range of interest or something</em>).</p>
+
+<p>We want to design a system that for a given query element of that sequence (such as <em>our preferable flying date and time</em>) would return the closest next subsequest element that is a key of our dictionary(<em>next flight from our query time</em>):</p>
+
+<p>[
+<img src="./img/arrow.png" alt="Img" />
+
+]</p>
+
+<p><a href="http://youtu.be/AjFtTQevtq0">http://youtu.be/AjFtTQevtq0</a></p>
+
+<p>For the flight search website that would include the two following typical database tasks:</p>
+
+<ul>
+<li><strong>Looking up</strong>: searching for the next closest flights meeting some criteria for the given date and time (like <em>&ldquo;the next flight to Paris on Oct 9th after 9am&rdquo;</em>);</li>
+<li><strong>Updating</strong>: adding, editing or deleting specific flight records on request (like <em>&ldquo;the flight to Paris on Oct 9th 10am is canceled&rdquo;</em>).</li>
+</ul>
+
+<p>This problem of optimizing the flight is an example of the predecessor/successor search problem. It involves storing a dictionary with keys that make a subset of some subset</p>
+
+<p>X-fast tries is a data structure designed to store a subset of elements from a sequence in such a way so that it is possible to retrieve the next closest  element easily. People refer to such problems as the predecessor/ successor search.</p>
+
+<p>I have been reading up about <a href="http://en.wikipedia.org/wiki/X-fast_trie">x-fast tries</a> recently and decided to write up some notes  and also to make a simple python implementation to go along with it.</p>
+
+<p>Obviously, it is incredibly inefficient to just store them as a list and go through the list each time. We need some kind of a search tree.</p>
+
+<p>Times of planes leaving (for example, in minutes) make up a subset of all the possible times (all minutes in the span of the existence of that specific airport). thus we can store them as a set of natural numbers  in a certain range of integers.</p>
+
+<p>So with that representation we can use the Direct Access Table. That is, make up a binary table of size  |S|.</p>
+
+<p>What are some ways to tackle the predecessor/successor problem? Naively we can just move along up the Direct Access Table until we stumble upon the next record. The worst case scenario here would be just going through the whole empty table, <strong>O(m)</strong> .</p>
+
+<p>One improvement is to store pointers for predecessor/successor elements at each element. It does improve the predecessor/successor retrieval to just <strong>O(1)</strong> . However, we have a inserting or deleting elements becomes a costly procedure as we have to reassign every nearby value, <strong>O(m)</strong>.</p>
+
+<p>Here is the proposition. We build an ordered binary tree atop the m elements and mark every node that is a parent of the checked element. With each layer having two times less elements we only increased the total size of the array by two.</p>
+
+<h2 id="toy-problem:58b12276bf0ae383f71846d6c29edb1d">Toy problem</h2>
+
+<p>Here is a nice toy problem that I came up with in hope that it would make some cool-loking plots.</p>
+
+<p>With movie and tv show titles such as X-files, X-men and American History X, we have a trope of X standing for anything misterious (and heavily implied to be hip). How often are movies with such titles released? What was the first X-movie released since your birth?</p>
+
+<p>To find out, let us build the X-fast trie index for such X-titled movies by the year of release.</p>
+
+<p>Here is a plot of what we get:</p>
+
+<p>[
+<img src="./img/movies.png" alt="Img" />
+
+]</p>
+
+<p>Pretty nice, huh?</p>
+
+</div>
+</div>
+
+  </body>
+</html>

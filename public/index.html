@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title> my new hugo site &middot; my new hugo site </title>
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/poole.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/syntax.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  
+  <link href="http://localhost:1313/index.xml" rel="alternate" type="application/rss+xml" title="my new hugo site" />
+</head>
+
+<body>
+
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>my new hugo site</h1>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <ul class="sidebar-nav">
+      <li><a href="/">Home</a> </li>
+      
+    </ul>
+
+    <p>&copy; 2015. All rights reserved. </p>
+  </div>
+</div>
+
+
+    <div class="content container">
+<div class="posts">
+
+      
+  <div class="post">
+    <h1 class="post-title">
+      <a href="http://localhost:1313/">
+        Dmitry Peter Borzov
+      </a>
+    </h1>
+
+    <span class="post-date">Fri, Jan 23, 2015</span>
+
+    
+
+<h1 id="hi-i-am-dmitry-peter-borzov:d680e8a854a7cbad6d490c445cba2eba">Hi, I am Dmitry Peter Borzov</h1>
+
+<p>I am a developer who specializes on web and data analysis applications. My experience includes working with javascript [d3, Angular, Ember], golang, python [pandas, scipy] and C among other technologies.</p>
+
+<p>I come from academic background (check out the  peer-reviewed papers in theoretical physics I coauthored!) and that provided me skills for deep quantative analysis in various areas.</p>
+
+<p>If you feel like you know of a gig I might be interested in, ping me via email!</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="http://localhost:1313/xfast/">
+        Predecessor search for Big Data: x-fast tries, locality of reference and all that
+      </a>
+    </h1>
+
+    <span class="post-date">Sun, Dec 1, 2013</span>
+
+    
+
+<h1 id="predecessor-search-for-big-data-x-fast-tries-locality-of-reference-and-all-that:58b12276bf0ae383f71846d6c29edb1d">Predecessor search for Big Data: x-fast tries, locality of reference and all that</h1>
+
+<h3 id="abstract-we-get-a-bird-eye-view-on-the-fascinating-field-of-the-locality-of-reference-type-of-problems-and-then-get-practical-and-solve-our-toy-problem-by-implementing-an-x-fast-trie-in-python:58b12276bf0ae383f71846d6c29edb1d"><em>Abstract:</em> We get a bird eye view on the fascinating field of the locality of reference-type of problems and then get practical and solve our toy problem by implementing an x-fast trie in Python.</h3>
+
+<p>Imagine you are developing a flight search website. You need to build a tailored search index that is really good at one task: for the given date and search criteria returns the list of the next flights. How is it better to approach designing this?</p>
+
+<p>This is an example of encountering predecessor/successor search problem in practice. Predecessor/successor search (or predecessor search for &lsquo;short&rsquo;) stands for cases when we have some dictionary (<em>in our case, the flight timetable</em>) with its keys (<em>departure times</em>) making up a subset of some ordered sequence (<em>like all minutes in the time range of interest or something</em>).</p>
+
+<p>We want to design a system that for a given query element of that sequence (such as <em>our preferable flying date and time</em>) would return the closest next subsequest element that is a key of our dictionary(<em>next flight from our query time</em>):</p>
+
+<p>[
+<img src="./img/arrow.png" alt="Img" />
+
+]</p>
+
+<p><a href="http://youtu.be/AjFtTQevtq0">http://youtu.be/AjFtTQevtq0</a></p>
+
+<p>For the flight search website that would include the two following typical database tasks:</p>
+
+<ul>
+<li><strong>Looking up</strong>: searching for the next closest flights meeting some criteria for the given date and time (like <em>&ldquo;the next flight to Paris on Oct 9th after 9am&rdquo;</em>);</li>
+<li><strong>Updating</strong>: adding, editing or deleting specific flight records on request (like <em>&ldquo;the flight to Paris on Oct 9th 10am is canceled&rdquo;</em>).</li>
+</ul>
+
+<p>This problem of optimizing the flight is an example of the predecessor/successor search problem. It involves storing a dictionary with keys that make a subset of some subset</p>
+
+<p>X-fast tries is a data structure designed to store a subset of elements from a sequence in such a way so that it is possible to retrieve the next closest  element easily. People refer to such problems as the predecessor/ successor search.</p>
+
+<p>I have been reading up about <a href="http://en.wikipedia.org/wiki/X-fast_trie">x-fast tries</a> recently and decided to write up some notes  and also to make a simple python implementation to go along with it.</p>
+
+<p>Obviously, it is incredibly inefficient to just store them as a list and go through the list each time. We need some kind of a search tree.</p>
+
+<p>Times of planes leaving (for example, in minutes) make up a subset of all the possible times (all minutes in the span of the existence of that specific airport). thus we can store them as a set of natural numbers  in a certain range of integers.</p>
+
+<p>So with that representation we can use the Direct Access Table. That is, make up a binary table of size  |S|.</p>
+
+<p>What are some ways to tackle the predecessor/successor problem? Naively we can just move along up the Direct Access Table until we stumble upon the next record. The worst case scenario here would be just going through the whole empty table, <strong>O(m)</strong> .</p>
+
+<p>One improvement is to store pointers for predecessor/successor elements at each element. It does improve the predecessor/successor retrieval to just <strong>O(1)</strong> . However, we have a inserting or deleting elements becomes a costly procedure as we have to reassign every nearby value, <strong>O(m)</strong>.</p>
+
+<p>Here is the proposition. We build an ordered binary tree atop the m elements and mark every node that is a parent of the checked element. With each layer having two times less elements we only increased the total size of the array by two.</p>
+
+<h2 id="toy-problem:58b12276bf0ae383f71846d6c29edb1d">Toy problem</h2>
+
+<p>Here is a nice toy problem that I came up with in hope that it would make some cool-loking plots.</p>
+
+<p>With movie and tv show titles such as X-files, X-men and American History X, we have a trope of X standing for anything misterious (and heavily implied to be hip). How often are movies with such titles released? What was the first X-movie released since your birth?</p>
+
+<p>To find out, let us build the X-fast trie index for such X-titled movies by the year of release.</p>
+
+<p>Here is a plot of what we get:</p>
+
+<p>[
+<img src="./img/movies.png" alt="Img" />
+
+]</p>
+
+<p>Pretty nice, huh?</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="http://localhost:1313/mini-cv/">
+        CV
+      </a>
+    </h1>
+
+    <span class="post-date">Mon, May 20, 2013</span>
+
+    
+
+<h2 id="scientific-publications:3245619a855def96da81017ab33be609">Scientific publications</h2>
+
+<ul>
+<li>M. S. Mashayekhi, J.-S. Bernier, D. Borzov, J.-L. Song, F. Zhou, “Two-dimensional Bose gases near
+resonance: universal three-body effects”, Phys. Rev. Lett. 110, 145301 (2013), arxiv:1209.4929</li>
+<li>D.Borzov, M.S.Mashayekhi, Sh.Zhang, J.Song, F.Zhou, &ldquo;Nature of 3D Bose Gases near Resonance&rdquo;, Phys.
+Rev. A 85, 023620 (2012), arxiv:1110.2183</li>
+<li>D.Borzov, &ldquo;Optical vibrations of hydrogen in disordered palladium-gold alloys&rdquo;, Physics of Extreme States
+of Matter (2009), arXiv:0901.1381v1</li>
+</ul>
+
+<h2 id="education:3245619a855def96da81017ab33be609">Education</h2>
+
+<p>Ph.D. in Physics, 2012-
+Department of Physics and Astronomy, University of British Columbia
+Research Group of Dr. Zhou
+Master of Science, 2009-2011
+Department of Physics and Astronomy, University of British Columbia
+Bachelor of Science, 2005-2009
+Moscow Institute of Physics and Technology
+Major: General and Applied Mathematics and Physics
+Software development experience
+3rd place prize award, Team “Marco Polo”
+Startup Weekend program at UBC (April, 2013)
+Description: My contribution to this team project was the development of a web-based CMS system. I
+worked on the backend development in Python/Django with SQL-based database binding.
+github.com/dborzov/machine_learning_algorithms
+An open source software library I developed that implements several statistics/machine learning
+algorithms (based on the book &ldquo;Learning from Data&rdquo; by Abu-Mostafa et al.)
+dborzov.github.io/fredholm/
+An open-source library for solving Fredholm equations of a certain type numerically. Applications include
+research in applied mathematics and theoretical physics.
+github.com/dborzov/subtitles2flashcards
+A nice little open-source program that allows for analysis of word frequencies in movie subtitles.</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="http://localhost:1313/flaky/">
+        Floating-point considered harmful
+      </a>
+    </h1>
+
+    <span class="post-date">Mon, May 20, 2013</span>
+
+    
+
+<h1 id="floating-point-considered-harmful:e8456fad07eaa3dc56ccc5cbd755a010">Floating-point considered harmful</h1>
+
+<h3 id="abstract-modern-datatypes-for-quantities-such-as-length-time-or-a-number-should-employ-ideas-from-the-functional-programming-keep-track-of-when-the-rounding-errors-arise-support-defining-with-functions-represent-results-appropriately-to-the-context-flaky-an-open-source-framework-wants-to-make-things-right:e8456fad07eaa3dc56ccc5cbd755a010"><em>Abstract:</em> Modern datatypes for quantities (such as length, time or a number) should employ ideas from the functional programming: keep track of when the rounding errors arise,  support defining with functions, represent results appropriately to the context. Flaky, an open source framework, wants to make things right.</h3>
+
+<p><a href="https://en.wikipedia.org/wiki/Floating_point">Floating point datatype</a> is the de-facto standard for real world quantities. Whether it is your GPS coordinates or sizes of the bridge nearby (likely designed in AutoCAD), this datatype lies in the foundation of every system. Since its introduction in the dawn of computing, floating point was accepted almost universally.</p>
+
+<p>Advantages such as scalability, resilience and ease of use make floating point the datatype of choice again and again. However, it is also fragile and prone to errors. This limitations are well known, of course, and could be minimized with appropriate  expertise and focus.</p>
+
+<p>And yet I believe that we, as an industry, could do better. Number representation based on the ideas of functional programming minimizes flaws characteristic to the floating point datatypes. And it can be made as resilient and scalable as the floating point. In this article, I outline why I decided to write Flaky, an open source library that attempts to implement such concepts.</p>
+
+<p>In the first section we will glance at illustrating cases of when floating point breaks and try to understand what flaws should be addressed. We then look at other initiatives in this space. Finally, I introduce the design that I came up with for Flaky.</p>
+
+<h2 id="when-floating-point-fails:e8456fad07eaa3dc56ccc5cbd755a010">When floating point fails</h2>
+
+<p>Let us consider illustrative cases of when floating point representation leads to dramatically wrong answers.</p>
+
+<h4 id="accumulating-errors:e8456fad07eaa3dc56ccc5cbd755a010">Accumulating errors</h4>
+
+<p>Well, this one is obvious. When the number cannot be represented exactly, it has to be rounded up. These rounding errors can accumulate and can lead to silly results.</p>
+
+<p>Let us, for example, take the square root of a number several times, and then try to reproduce the original value with the reversal operation (that is, taking squares)</p>
+
+<pre><code># price.py listing, a Python script
+import math
+INITIAL_VALUE=1.9934545345
+
+def reversable_iterations(iteration_number):
+    test_floating = INITIAL_VALUE
+    for i in range(iteration_number):
+        test_floating = math.sqrt(test_floating)
+    for i in range(iteration_number):
+        test_floating = test_floating**2
+    return 'with '+str(iteration_number)+' iterations, we get '+str(test_floating)
+
+print 'The intial value is ',INITIAL_VALUE
+print reversable_iterations(1)
+print reversable_iterations(10)
+print reversable_iterations(20)
+print reversable_iterations(40)
+print reversable_iterations(50)
+print reversable_iterations(60)
+</code></pre>
+
+<p>This yields:</p>
+
+<pre><code>The intial value is  1.9934545345
+with 1 iterations, we get 1.9934545345
+with 10 iterations, we get 1.9934545345
+with 20 iterations, we get 1.99345453444
+with 40 iterations, we get 1.99311204568
+with 50 iterations, we get 1.64872126455
+with 60 iterations, we get 1.0
+</code></pre>
+
+<p>That the end result breaks is hardly a  surprise. Moreover, a similar effect could be achieved for any number representation datatype. Just from the general principles, if the size  of the <a href="http://en.wikipedia.org/wiki/Kolmogorov_complexity">Kolmogorov complexity</a> of a number is larger than the memory allocated for the datatype, these types of errors cannot be ruled out.</p>
+
+<p>What I wanted to emphasize here instead is the total equanimity of the floating type. It is very hard to understand what is going on at various stages. In my opinion, this is an incredible engineering design flaw.</p>
+
+<p>To see what I mean, let us figure out why the error is of order of 10% for 50 iterations, but converges to a wrong answer at 60. To do this we have to know how the number is represented internally, look up the default  <a href="https://en.wikipedia.org/wiki/Significand">mantissa/significand</a> size for the programming language of our choice and make the estimation calculation on a piece of paper.</p>
+
+<p>The lack of the uncertainty estimation defeats the whole purpose of any computation.</p>
+
+<h4 id="the-quadratic-equation:e8456fad07eaa3dc56ccc5cbd755a010">The quadratic equation</h4>
+
+<p>Even writing a program that solves the quadratic equation
+for arbitrary constant values is a serious task.
+For example, let us consider the following equation
+[
+<img src="./img/quadratic.gif" alt="Img" />
+
+]
+Note that there is no constant term and thus one solution is simply zero. However, the naive solution with the quadratic formula fails to reflect this. Here is the first Google result for &ldquo;quadratic equation solver&rdquo;:</p>
+
+<p>[
+<img src="./img/QuadraticEquation.png" alt="Img" />
+
+]
+For the general case implementation, we must treat each marginal case separately. First, if the constant term is zero, then if the quadratic term is absent, and so on, one by one.</p>
+
+<p>Quadratic equation is the simplest case of the numerical problem imaginable. Yet even here we see that one needs to manually implement basic calculus logic behind the known solution.</p>
+
+<h4 id="scaling-does-not-match-the-problem:e8456fad07eaa3dc56ccc5cbd755a010">Scaling does not match the problem</h4>
+
+<p>Let us once again consider the quadratic equation, but this time in terms of the new variable we introduce
+[
+y = \frac{\textrm{exp}(x)}{1 + \textrm{exp}(x)}
+]
+The quadratic equation in terms of y looks as follows
+[
+a \textrm{ log}^2 (\frac{y}{1-y}) + b \textrm{ log} (\frac{y}{1-y}) + c = 0
+]
+Here is what the plot of the definition of the y function looks like
+[
+<img src="img/softThreshold.png" alt="Img" />
+
+]
+The variable y &ldquo;maps&rdquo; the whole x range to its (0,1) range. This function is also known as the soft threshold.</p>
+
+<p>Attempting to solve this problem numerically in terms of y should be quite challenging. The number representation for y means that all the &ldquo;graining&rdquo; for sufficiently large x values (say, x&gt;5) becomes too rude.</p>
+
+<p>That is, the number representation for the floating point
+[
+\underbrace{\text{integer}}_{\text{mantissa}} \cdot \text{base}^\text{exponent}
+] offers the scale that is not appropriate for this problem. The solutions for large x should fail spectacularly. Interestingly, the solutions with the y going to the zero limit (x going negative, for example, x&lt;-5) will be a little more resilient. The lack of the constant term (1. for large x) means that the base of the exponent will scale down gracefully.</p>
+
+<p>How does this issue work for the (relatively) real world problems? Let me share my personal experience. In our research study on <a href="http://prl.aps.org/abstract/PRL/v110/i14/e145301">the physics of ultracold gases in 2D</a> we derived a complex equation we ended up solving numerically. The solution function was diverging logarithmically in the limit in which we were interested</p>
+
+<p>[ f(x) =  \textrm{Log}( x )^{w} + \text{ non-diverging terms }, x \rightarrow 0 ]</p>
+
+<p>However, it turned out practically impossible to learn the order of the divergence w from this numerical solution. The floating point representation meant that the log of the number is represented inefficiently for the problem.</p>
+
+<p>The solution was to introduce the new variable
+[
+z = -\textrm{Log}( x )
+]
+and express the whole problem and the solution in terms of z.</p>
+
+<p>Matching the number representation scale to the problem in the general case, is of course, impossible. It depends on the interpretation of the problem , what we are actually interested in.</p>
+
+<p>However, it would have been helpful if it was possible to tweak the scaling used without too much hassle.</p>
+
+<h4 id="summary:e8456fad07eaa3dc56ccc5cbd755a010">Summary</h4>
+
+<p>Here is how the new quantity datatypes could be better:</p>
+
+<ul>
+<li>We saw in the example of accumulating errors that every operation performed with the number should be traceable. Errors and uncertainties should be recorded from each operation and reported when needed.</li>
+<li>With the quadratic equation solver it is obvious that tracing analytic expressions used for computations allow for automatic implementation of the marginal cases and can save the developer a lot of time.</li>
+<li>Datatype representation scaling should match the problem at hand and not be fixed. Tools must exist to do this with ease.</li>
+</ul>
+
+<h2 id="doing-things-right:e8456fad07eaa3dc56ccc5cbd755a010">Doing things right</h2>
+
+<blockquote>
+<p>An infinite number of mathematicians walk into a bar. The first orders a beer. The second orders half a beer. The third orders a quarter of a beer. Before the next one can order, the bartender says, “You’re all assholes,” and pours two beers. <a href="http://www.komplexify.com/math/jokes/MathWalksIntoABar3.html">TE</a></p>
+</blockquote>
+
+<p>Now we let us discuss the solutions that can fix these issues.</p>
+
+<h4 id="what-is-out-there:e8456fad07eaa3dc56ccc5cbd755a010">What is out there.</h4>
+
+<p>Apparently, the best way to approach the problem is to use the functional programming concepts. To retain the analytical expression used for the value definition, at least to some limit, and to have tools to change it when needed.</p>
+
+<p>A classic case where the functional number representation was implemented is the language behind Wolfram Mathematica.
+Too bad that for the non-technical reasons it is apparently destined to go into obscurity and not fulfill its full potential.</p>
+
+<p>Another example when things seem to be done right is the <a href="http://sympy.org/en/index.html">SymPy</a>, a Python package for symbolic computations. Functional number representation is very solid. It is important to note, however, that the goal of the project is to make tools for symbolic calculations, not to create a viable alternative to the floating point.</p>
+
+<h4 id="why-not-flaky:e8456fad07eaa3dc56ccc5cbd755a010">Why not flaky.</h4>
+
+<p>So we saw how to make things better and why we should. These reasons compelled me start Flaky, the open-source project for quantity datatype based on the concepts of functional programming.</p>
+
+<p>Numbers are represented as operations to the other numbers. Together they can make up long layers (or flakes). Simplifying occurs whenever possible.</p>
+
+<p>[
+(\textrm{frac},4,(\textrm{pow}, 5,(\textrm{frac},1,2))) = \frac{4}{\sqrt{5}}
+]</p>
+
+<p>The size parameter defines when the datatype length is judged to be too long, then the rounding up occurs. There is a logging method to keep track of it. There is also the uncertainty estimation for margins of confidence.</p>
+
+<p>One may choose the specific representation of the number. Matching, rounding and scaling happens seamlessly.</p>
+
+<p>Flaky is written in the <a href="http://www.golang.org">Go programming language</a>. The repository is available on <a href="https://github.com/dborzov/FlakyPastry">Github</a> (or will be soon :)) .</p>
+
+<p>A discussion of this post is available on <a href="https://news.ycombinator.com/item?id=5731366">Hacker News</a>.</p>
+
+  </div>
+  
+</div>
+</div>
+
+  </body>
+</html>
