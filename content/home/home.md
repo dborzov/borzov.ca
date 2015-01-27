@@ -7,17 +7,23 @@ title = "Dmitry Peter Borzov"
 
 ## Hi, I am Dmitry Peter Borzov
 
-I am a developer and I specialize in web and data analysis/processing applications. My experience includes working with javascript [d3, Angular, Ember], golang, python [pandas, scipy, django, flask] and C# among other technologies.
+I specialize in development of web and data analysis/processing applications. My experience includes working with javascript [d3, Angular, Ember], golang, python [pandas, scipy, django, flask] and C# among other technologies.
 
 ## Open source projects
 
 See my [github account page for details](https://github.com/dborzov).
 
-#### **lsp** - `ls` shell command alternative reimagined for modern times, with friendlier notations, built-in awareness of things like git repos and various dotfiles file datatypes.  
+#### **lsp** - `ls` shell command alternative reimagined for modern times
 
-#### **NetVis** - a tool to visualize and understand networks. Translate your network logs to a simple JSON-based NetVis format and visualize the network events and communication in detail. Check out the [demo](http://www.borzov.ca/netvis/). Built in coordination with [IPFS team](http://ipfs.io/), NetVis is an indispensable tool when designing and developing network functionality on any level.
+with friendlier notations, built-in awareness of things like git repos and various dotfiles file datatypes.  
 
-#### **RusticSearch** - is a simple search engine server. It uses in-memory suffix array to lookup index entries. RusticSearch is minimalistic in design and perfect when adding simple search functionality where [fancier solutions](http://www.elasticsearch.org/) can be an overkill.
+#### **NetVis** - a tool to visualize and understand networks
+
+ Translate your network logs to a simple JSON-based NetVis format and visualize the network events and communication in detail. Check out the [demo](http://www.borzov.ca/netvis/). Built in coordination with [IPFS team](http://ipfs.io/), NetVis is an indispensable tool when designing and developing network functionality on any level.
+
+#### **RusticSearch** - is a simple search engine server
+
+ It uses in-memory suffix array to lookup index entries. RusticSearch is minimalistic in design and perfect when adding simple search functionality where [fancier solutions](http://www.elasticsearch.org/) can be an overkill.
 
 ## Writings
 

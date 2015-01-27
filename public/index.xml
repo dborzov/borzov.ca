@@ -22,17 +22,23 @@
 
 &lt;h2 id=&#34;hi-i-am-dmitry-peter-borzov:b9bcf8cb73ce4a081a635ad7c0acd9dd&#34;&gt;Hi, I am Dmitry Peter Borzov&lt;/h2&gt;
 
-&lt;p&gt;I am a developer and I specialize in web and data analysis/processing applications. My experience includes working with javascript [d3, Angular, Ember], golang, python [pandas, scipy, django, flask] and C# among other technologies.&lt;/p&gt;
+&lt;p&gt;I specialize in development of web and data analysis/processing applications. My experience includes working with javascript [d3, Angular, Ember], golang, python [pandas, scipy, django, flask] and C# among other technologies.&lt;/p&gt;
 
 &lt;h2 id=&#34;open-source-projects:b9bcf8cb73ce4a081a635ad7c0acd9dd&#34;&gt;Open source projects&lt;/h2&gt;
 
 &lt;p&gt;See my &lt;a href=&#34;https://github.com/dborzov&#34;&gt;github account page for details&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h4 id=&#34;lsp-ls-shell-command-alternative-reimagined-for-modern-times-with-friendlier-notations-built-in-awareness-of-things-like-git-repos-and-various-dotfiles-file-datatypes:b9bcf8cb73ce4a081a635ad7c0acd9dd&#34;&gt;&lt;strong&gt;lsp&lt;/strong&gt; - &lt;code&gt;ls&lt;/code&gt; shell command alternative reimagined for modern times, with friendlier notations, built-in awareness of things like git repos and various dotfiles file datatypes.&lt;/h4&gt;
+&lt;h4 id=&#34;lsp-ls-shell-command-alternative-reimagined-for-modern-times:b9bcf8cb73ce4a081a635ad7c0acd9dd&#34;&gt;&lt;strong&gt;lsp&lt;/strong&gt; - &lt;code&gt;ls&lt;/code&gt; shell command alternative reimagined for modern times&lt;/h4&gt;
 
-&lt;h4 id=&#34;netvis-a-tool-to-visualize-and-understand-networks-translate-your-network-logs-to-a-simple-json-based-netvis-format-and-visualize-the-network-events-and-communication-in-detail-check-out-the-demo-http-www-borzov-ca-netvis-built-in-coordination-with-ipfs-team-http-ipfs-io-netvis-is-an-indispensable-tool-when-designing-and-developing-network-functionality-on-any-level:b9bcf8cb73ce4a081a635ad7c0acd9dd&#34;&gt;&lt;strong&gt;NetVis&lt;/strong&gt; - a tool to visualize and understand networks. Translate your network logs to a simple JSON-based NetVis format and visualize the network events and communication in detail. Check out the &lt;a href=&#34;http://www.borzov.ca/netvis/&#34;&gt;demo&lt;/a&gt;. Built in coordination with &lt;a href=&#34;http://ipfs.io/&#34;&gt;IPFS team&lt;/a&gt;, NetVis is an indispensable tool when designing and developing network functionality on any level.&lt;/h4&gt;
+&lt;p&gt;with friendlier notations, built-in awareness of things like git repos and various dotfiles file datatypes.&lt;/p&gt;
 
-&lt;h4 id=&#34;rusticsearch-is-a-simple-search-engine-server-it-uses-in-memory-suffix-array-to-lookup-index-entries-rusticsearch-is-minimalistic-in-design-and-perfect-when-adding-simple-search-functionality-where-fancier-solutions-http-www-elasticsearch-org-can-be-an-overkill:b9bcf8cb73ce4a081a635ad7c0acd9dd&#34;&gt;&lt;strong&gt;RusticSearch&lt;/strong&gt; - is a simple search engine server. It uses in-memory suffix array to lookup index entries. RusticSearch is minimalistic in design and perfect when adding simple search functionality where &lt;a href=&#34;http://www.elasticsearch.org/&#34;&gt;fancier solutions&lt;/a&gt; can be an overkill.&lt;/h4&gt;
+&lt;h4 id=&#34;netvis-a-tool-to-visualize-and-understand-networks:b9bcf8cb73ce4a081a635ad7c0acd9dd&#34;&gt;&lt;strong&gt;NetVis&lt;/strong&gt; - a tool to visualize and understand networks&lt;/h4&gt;
+
+&lt;p&gt;Translate your network logs to a simple JSON-based NetVis format and visualize the network events and communication in detail. Check out the &lt;a href=&#34;http://www.borzov.ca/netvis/&#34;&gt;demo&lt;/a&gt;. Built in coordination with &lt;a href=&#34;http://ipfs.io/&#34;&gt;IPFS team&lt;/a&gt;, NetVis is an indispensable tool when designing and developing network functionality on any level.&lt;/p&gt;
+
+&lt;h4 id=&#34;rusticsearch-is-a-simple-search-engine-server:b9bcf8cb73ce4a081a635ad7c0acd9dd&#34;&gt;&lt;strong&gt;RusticSearch&lt;/strong&gt; - is a simple search engine server&lt;/h4&gt;
+
+&lt;p&gt;It uses in-memory suffix array to lookup index entries. RusticSearch is minimalistic in design and perfect when adding simple search functionality where &lt;a href=&#34;http://www.elasticsearch.org/&#34;&gt;fancier solutions&lt;/a&gt; can be an overkill.&lt;/p&gt;
 
 &lt;h2 id=&#34;writings:b9bcf8cb73ce4a081a635ad7c0acd9dd&#34;&gt;Writings&lt;/h2&gt;
 
