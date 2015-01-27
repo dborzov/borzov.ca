@@ -7,21 +7,21 @@ title = "Dmitry Peter Borzov"
 
 ## Hi, I am Dmitry Peter Borzov
 
-I specialize in development of web and data analysis/processing applications. My experience includes working with javascript [d3, Angular, Ember], golang, python [pandas, scipy, django, flask] and C# among other technologies.
+I specialize in development of web and data analysis/processing applications. My experience includes working with javascript [d3, Angular, Ember, node], golang, python [pandas, scipy, django, flask] and C# among other technologies.
 
 ## Open source projects
 
-See my [github account page for details](https://github.com/dborzov).
+(also, see my [github account page](https://github.com/dborzov))
 
-#### **lsp** - `ls` shell command alternative reimagined for modern times
+#### [**lsp** - `ls` shell command alternative reimagined for modern times](https://github.com/dborzov/lsp)
 
 with friendlier notations, built-in awareness of things like git repos and various dotfiles file datatypes.  
 
-#### **NetVis** - a tool to visualize and understand networks
+#### [**NetVis** - a tool to visualize and understand networks](https://github.com/dborzov/netvis)
 
  Translate your network logs to a simple JSON-based NetVis format and visualize the network events and communication in detail. Check out the [demo](http://www.borzov.ca/netvis/). Built in coordination with [IPFS team](http://ipfs.io/), NetVis is an indispensable tool when designing and developing network functionality on any level.
 
-#### **RusticSearch** - is a simple search engine server
+#### [**RusticSearch** - is a simple search engine server](https://github.com/dborzov/rusticsearch)
 
  It uses in-memory suffix array to lookup index entries. RusticSearch is minimalistic in design and perfect when adding simple search functionality where [fancier solutions](http://www.elasticsearch.org/) can be an overkill.
 
@@ -33,7 +33,7 @@ Introduction to X-fast trie-style data structures. Imagine you are developing a 
 
 #### *May 2013* Floating-point considered harmful
 
-Limitations of calculations based on floating-point are well known. We explore how using custom data types tailored for a task at hand allows for bypassing these.
+Limitations of calculations based on floating-point are well known. We explore how using custom data types tailored for a task at hand allows for bypassing them.
 
 Here is the list of academic peer-reviewed research papers I coauthored:
 
