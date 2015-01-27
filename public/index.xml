@@ -22,9 +22,35 @@
 
 &lt;h2 id=&#34;hi-i-am-dmitry-peter-borzov:b9bcf8cb73ce4a081a635ad7c0acd9dd&#34;&gt;Hi, I am Dmitry Peter Borzov&lt;/h2&gt;
 
-&lt;p&gt;I am a developer who specializes on web and data analysis applications. My experience includes working with javascript [d3, Angular, Ember], golang, python [pandas, scipy] and C among other technologies.&lt;/p&gt;
+&lt;p&gt;I am a developer and I specialize in web and data analysis/processing applications. My experience includes working with javascript [d3, Angular, Ember], golang, python [pandas, scipy, django, flask] and C# among other technologies.&lt;/p&gt;
 
-&lt;p&gt;I come from academic background (check out the  peer-reviewed papers in theoretical physics I coauthored!) and that provided me with skills for deep quantative analysis in various areas. It comes handy now and then :)&lt;/p&gt;
+&lt;h2 id=&#34;open-source-projects:b9bcf8cb73ce4a081a635ad7c0acd9dd&#34;&gt;Open source projects&lt;/h2&gt;
+
+&lt;p&gt;See my &lt;a href=&#34;https://github.com/dborzov&#34;&gt;github account page for details&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&#34;lsp-ls-shell-command-alternative-reimagined-for-modern-times-with-friendlier-notations-built-in-awareness-of-things-like-git-repos-and-various-dotfiles-file-datatypes:b9bcf8cb73ce4a081a635ad7c0acd9dd&#34;&gt;&lt;strong&gt;lsp&lt;/strong&gt; - &lt;code&gt;ls&lt;/code&gt; shell command alternative reimagined for modern times, with friendlier notations, built-in awareness of things like git repos and various dotfiles file datatypes.&lt;/h4&gt;
+
+&lt;h4 id=&#34;netvis-a-tool-to-visualize-and-understand-networks-translate-your-network-logs-to-a-simple-json-based-netvis-format-and-visualize-the-network-events-and-communication-in-detail-check-out-the-demo-http-www-borzov-ca-netvis-built-in-coordination-with-ipfs-team-http-ipfs-io-netvis-is-an-indispensable-tool-when-designing-and-developing-network-functionality-on-any-level:b9bcf8cb73ce4a081a635ad7c0acd9dd&#34;&gt;&lt;strong&gt;NetVis&lt;/strong&gt; - a tool to visualize and understand networks. Translate your network logs to a simple JSON-based NetVis format and visualize the network events and communication in detail. Check out the &lt;a href=&#34;http://www.borzov.ca/netvis/&#34;&gt;demo&lt;/a&gt;. Built in coordination with &lt;a href=&#34;http://ipfs.io/&#34;&gt;IPFS team&lt;/a&gt;, NetVis is an indispensable tool when designing and developing network functionality on any level.&lt;/h4&gt;
+
+&lt;h4 id=&#34;rusticsearch-is-a-simple-search-engine-server-it-uses-in-memory-suffix-array-to-lookup-index-entries-rusticsearch-is-minimalistic-in-design-and-perfect-when-adding-simple-search-functionality-where-fancier-solutions-http-www-elasticsearch-org-can-be-an-overkill:b9bcf8cb73ce4a081a635ad7c0acd9dd&#34;&gt;&lt;strong&gt;RusticSearch&lt;/strong&gt; - is a simple search engine server. It uses in-memory suffix array to lookup index entries. RusticSearch is minimalistic in design and perfect when adding simple search functionality where &lt;a href=&#34;http://www.elasticsearch.org/&#34;&gt;fancier solutions&lt;/a&gt; can be an overkill.&lt;/h4&gt;
+
+&lt;h2 id=&#34;writings:b9bcf8cb73ce4a081a635ad7c0acd9dd&#34;&gt;Writings&lt;/h2&gt;
+
+&lt;h4 id=&#34;dec-2013-predecessor-search-for-big-data-x-fast-tries-locality-of-reference-and-all-that:b9bcf8cb73ce4a081a635ad7c0acd9dd&#34;&gt;&lt;em&gt;Dec 2013&lt;/em&gt; Predecessor search for Big Data: x-fast tries, locality of reference and all that&lt;/h4&gt;
+
+&lt;p&gt;Introduction to X-fast trie-style data structures. Imagine you are developing a flight search website. You need to build a tailored search index that is really good at one task: for the given date and search criteria returns the list of the next flights. How is it better to approach designing this?&lt;/p&gt;
+
+&lt;h4 id=&#34;may-2013-floating-point-considered-harmful:b9bcf8cb73ce4a081a635ad7c0acd9dd&#34;&gt;&lt;em&gt;May 2013&lt;/em&gt; Floating-point considered harmful&lt;/h4&gt;
+
+&lt;p&gt;Limitations of calculations based on floating-point are well known. We explore how using custom data types tailored for a task at hand allows for bypassing these.&lt;/p&gt;
+
+&lt;p&gt;Here is the list of academic peer-reviewed research papers I coauthored:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;M. S. Mashayekhi, J.-S. Bernier, D. Borzov, J.-L. Song, F. Zhou, &amp;ldquo;Two-dimensional Bose gases near resonance: universal three-body effects”, &lt;a href=&#34;http://prl.aps.org/abstract/PRL/v110/i14/e145301&#34;&gt;Phys. Rev. Lett. 110, 145301 (2013)&lt;/a&gt;, &lt;a href=&#34;http://arxiv.org/abs/1209.4929&#34;&gt;arxiv:1209.4929&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;D.Borzov, M.S.Mashayekhi, Sh.Zhang, J.Song, F.Zhou, &amp;ldquo;Nature of 3D Bose Gases near Resonance&amp;rdquo;, &lt;a href=&#34;http://pra.aps.org/abstract/PRA/v85/i2/e023620&#34;&gt;Phys.Rev. A 85, 023620 (2012)&lt;/a&gt;, &lt;a href=&#34;http://arxiv.org/abs/1110.2183&#34;&gt;arxiv:1110.2183&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;D.Borzov, &amp;ldquo;Optical vibrations of hydrogen in disordered palladium-gold alloys&amp;rdquo;, Physics of Extreme States of Matter (2009), &lt;a href=&#34;http://arxiv.org/abs/0901.1381&#34;&gt;arXiv:0901.1381v1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
