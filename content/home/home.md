@@ -7,7 +7,7 @@ title = "Dmitry Peter Borzov"
 
 ## Hi, I am Dmitry Peter Borzov
 
-I specialize in development of web and data analysis/processing applications. My experience includes working with javascript [d3, Angular, Ember, node], golang, python [pandas, scipy, django, flask] and C# among other technologies.
+I specialize in development of web and data analysis applications. My experience includes working with javascript [d3, Angular, Ember, node], golang, python [pandas, scipy, django, flask] and C# among other technologies.
 
 ## Open source projects
 
