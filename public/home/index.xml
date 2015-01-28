@@ -28,9 +28,9 @@
 
 &lt;p&gt;(also, see my &lt;a href=&#34;https://github.com/dborzov&#34;&gt;github account page&lt;/a&gt;)&lt;/p&gt;
 
-&lt;h4 id=&#34;lsp-ls-shell-command-alternative-reimagined-for-modern-times-https-github-com-dborzov-lsp:b9bcf8cb73ce4a081a635ad7c0acd9dd&#34;&gt;&lt;a href=&#34;https://github.com/dborzov/lsp&#34;&gt;&lt;strong&gt;lsp&lt;/strong&gt; - &lt;code&gt;ls&lt;/code&gt; shell command alternative reimagined for modern times&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&#34;lsp-ls-shell-command-alternative-https-github-com-dborzov-lsp:b9bcf8cb73ce4a081a635ad7c0acd9dd&#34;&gt;&lt;a href=&#34;https://github.com/dborzov/lsp&#34;&gt;&lt;strong&gt;lsp&lt;/strong&gt; - &lt;code&gt;ls&lt;/code&gt; shell command alternative&lt;/a&gt;&lt;/h4&gt;
 
-&lt;p&gt;with friendlier notations, built-in awareness of things like git repos and various dotfiles file datatypes.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ls&lt;/code&gt;  reimagined for modern times, with friendlier notations, built-in awareness of things like git repos and various dotfiles file datatypes.&lt;/p&gt;
 
 &lt;h4 id=&#34;netvis-a-tool-to-visualize-and-understand-networks-https-github-com-dborzov-netvis:b9bcf8cb73ce4a081a635ad7c0acd9dd&#34;&gt;&lt;a href=&#34;https://github.com/dborzov/netvis&#34;&gt;&lt;strong&gt;NetVis&lt;/strong&gt; - a tool to visualize and understand networks&lt;/a&gt;&lt;/h4&gt;
 
@@ -42,13 +42,15 @@
 
 &lt;h2 id=&#34;writings:b9bcf8cb73ce4a081a635ad7c0acd9dd&#34;&gt;Writings&lt;/h2&gt;
 
-&lt;h4 id=&#34;dec-2013-predecessor-search-for-big-data-x-fast-tries-locality-of-reference-and-all-that:b9bcf8cb73ce4a081a635ad7c0acd9dd&#34;&gt;&lt;em&gt;Dec 2013&lt;/em&gt; Predecessor search for Big Data: x-fast tries, locality of reference and all that&lt;/h4&gt;
+&lt;h4 id=&#34;dec-2013-predecessor-search-for-big-data-x-fast-tries-locality-of-reference-and-all-that-http-localhost-1313-posts-xfast:b9bcf8cb73ce4a081a635ad7c0acd9dd&#34;&gt;&lt;a href=&#34;http://localhost:1313/posts/xfast/&#34;&gt;&lt;em&gt;Dec 2013&lt;/em&gt; Predecessor search for Big Data: x-fast tries, locality of reference and all that&lt;/a&gt;&lt;/h4&gt;
 
-&lt;p&gt;Introduction to X-fast trie-style data structures. Imagine you are developing a flight search website. You need to build a tailored search index that is really good at one task: for the given date and search criteria returns the list of the next flights. How is it better to approach designing this?&lt;/p&gt;
+&lt;p&gt;Introduction to X-fast trie-style data structures.&lt;/p&gt;
 
-&lt;h4 id=&#34;may-2013-floating-point-considered-harmful:b9bcf8cb73ce4a081a635ad7c0acd9dd&#34;&gt;&lt;em&gt;May 2013&lt;/em&gt; Floating-point considered harmful&lt;/h4&gt;
+&lt;h4 id=&#34;may-2013-floating-point-considered-harmful-http-localhost-1313-posts-floating-point:b9bcf8cb73ce4a081a635ad7c0acd9dd&#34;&gt;&lt;a href=&#34;http://localhost:1313/posts/floating-point/&#34;&gt;&lt;em&gt;May 2013&lt;/em&gt; Floating-point considered harmful&lt;/a&gt;&lt;/h4&gt;
 
 &lt;p&gt;Limitations of calculations based on floating-point are well known. We explore how using custom data types tailored for a task at hand allows for bypassing them.&lt;/p&gt;
+
+&lt;h2 id=&#34;research-papers:b9bcf8cb73ce4a081a635ad7c0acd9dd&#34;&gt;Research papers&lt;/h2&gt;
 
 &lt;p&gt;Here is the list of academic peer-reviewed research papers I coauthored:&lt;/p&gt;
 
