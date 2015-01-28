@@ -13,9 +13,9 @@ I specialize in development of web and data analysis/processing applications. My
 
 (also, see my [github account page](https://github.com/dborzov))
 
-#### [**lsp** - `ls` shell command alternative reimagined for modern times](https://github.com/dborzov/lsp)
+#### [**lsp** - `ls` shell command alternative](https://github.com/dborzov/lsp)
 
-with friendlier notations, built-in awareness of things like git repos and various dotfiles file datatypes.  
+`ls`  reimagined for modern times, with friendlier notations, built-in awareness of things like git repos and various dotfiles file datatypes.  
 
 #### [**NetVis** - a tool to visualize and understand networks](https://github.com/dborzov/netvis)
 
@@ -27,14 +27,16 @@ with friendlier notations, built-in awareness of things like git repos and vario
 
 ## Writings
 
-#### *Dec 2013* Predecessor search for Big Data: x-fast tries, locality of reference and all that
+#### [*Dec 2013* Predecessor search for Big Data: x-fast tries, locality of reference and all that](http://localhost:1313/posts/xfast/)
 
-Introduction to X-fast trie-style data structures. Imagine you are developing a flight search website. You need to build a tailored search index that is really good at one task: for the given date and search criteria returns the list of the next flights. How is it better to approach designing this?
+Introduction to X-fast trie-style data structures.
 
-#### *May 2013* Floating-point considered harmful
+#### [*May 2013* Floating-point considered harmful](http://localhost:1313/posts/floating-point/)
 
 Limitations of calculations based on floating-point are well known. We explore how using custom data types tailored for a task at hand allows for bypassing them.
 
+
+## Research papers
 Here is the list of academic peer-reviewed research papers I coauthored:
 
 - M. S. Mashayekhi, J.-S. Bernier, D. Borzov, J.-L. Song, F. Zhou, "Two-dimensional Bose gases near resonance: universal three-body effects”, [Phys. Rev. Lett. 110, 145301 (2013)](http://prl.aps.org/abstract/PRL/v110/i14/e145301), [arxiv:1209.4929](http://arxiv.org/abs/1209.4929)
