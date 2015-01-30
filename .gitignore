@@ -1,2 +1,1 @@
-public/  # the built files are to be hosted on github pages
-public/*
+public/** 
