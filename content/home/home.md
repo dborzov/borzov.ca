@@ -29,16 +29,12 @@ I specialize in development of web and data analysis applications. My experience
 
 #### [*Jan 2015* Routing at Bittorrent: understanding Kademlia DHTs (Distributed Hash Tables)](/posts/kademlia/)
 
-Using NetVis framework to visualize algorithms behind Kademlia-styled DHT. 
+Using NetVis framework to visualize algorithms behind Kademlia-styled DHT.
 
 
 #### [*Dec 2013* Predecessor search for Big Data: x-fast tries, locality of reference and all that](/posts/xfast/)
 
 Introduction to X-fast trie-style data structures.
-
-#### [*May 2013* Floating-point considered harmful](/posts/floating-point/)
-
-Limitations of calculations based on floating-point are well known. We explore how using custom data types tailored for a task at hand allows for bypassing them.
 
 
 ## Research papers
