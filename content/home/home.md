@@ -7,21 +7,21 @@ title = "Dmitry Peter Borzov"
 
 ## Hi, I am Dmitry Peter Borzov
 
-I specialize in development of web and data analysis applications. My experience includes working with javascript [d3, Angular, Ember, node], golang, python [pandas, scipy, django, flask] and C# among other technologies.
+I specialize in development of web and data analysis applications. My experience includes working with javascript [d3, Angular, Ember, node], golang, python [pandas, scipy, django, flask] and Java among other technologies.
 
 ## Open source projects
 
 (also, see my [github account page](https://github.com/dborzov))
 
-#### [**lsp** - `ls` shell command alternative](https://github.com/dborzov/lsp)
+#### [**lsp**: `ls` shell command alternative](https://github.com/dborzov/lsp)
 
 `ls`  reimagined for modern times, with friendlier notations, built-in awareness of things like git repos and various dotfiles file datatypes.  
 
-#### [**NetVis** - a tool to visualize and understand networks](https://github.com/dborzov/netvis)
+#### [**NetVis**: a tool to visualize and understand networks](https://github.com/dborzov/netvis)
 
  Translate your network logs to a simple JSON-based NetVis format and visualize the network events and communication in detail. Check out the [demo](http://www.borzov.ca/netvis/). Built in coordination with [IPFS team](http://ipfs.io/), NetVis is an indispensable tool when designing and developing network functionality on any level.
 
-#### [**RusticSearch** - is a simple search engine server](https://github.com/dborzov/rusticsearch)
+#### [**RusticSearch**: a simple search engine server](https://github.com/dborzov/rusticsearch)
 
  It uses in-memory suffix array to lookup index entries. RusticSearch is minimalistic in design and perfect when adding simple search functionality where [fancier solutions](http://www.elasticsearch.org/) can be an overkill.
 
