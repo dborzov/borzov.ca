@@ -120,10 +120,15 @@ In order to look up the predecessor movie for 1975 we start the binary search fo
 What would it take to add another movie, say, "Not a Real Movie X (1975)"? That would mean we need to go through all the parent nodes and make sure they are added to the corresponding level hash functions.  
 
 #### Practical Examples
+Comparing search time asymptotics for X-fast tries and search trees, we see that X-fast shines when `log[N]` grows faster than `log[log[M]]`, or when `N >> log[M]`.
 
-Let's come up with some practical examples of where X-fast trie can be useful:
+So let's come up with some practical examples of where X-fast trie can be useful:
 
-* Imagine you are developing a flight search website. For given date time of excpected departure we return the list of all the next flights.
+* Imagine you are developing a flight search website. For the given datetime of expected departure we return the list of all the next flights. Flights are updated and changed frequently. Datetime minutes can make up all the possible `u` values, and the flights to a specific direction make up `{n}`.
+
+* IP Packet Routing: an internet router needs to redirect the IP packets to other routers with the IP closest to the requested one.
+
+* Trackless bitTorrent peer-to-peer networks look up content by hash and the nodes with IDs closest to this hash (by some metric) are assigned with tracking this content. X-fast trie can get useful to lookup content in huge networks with large number of nodes (so that `n >> log[M]`).  (Hey! By the way, see my other [post](http://www.borzov.ca/posts/kademlia/) on the subject!).
 
 #### Data Structures with locality of reference
 
