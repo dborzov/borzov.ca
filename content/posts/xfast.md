@@ -143,9 +143,9 @@ What are some ways to tackle the predecessor/successor problem? Naively we can j
 
 One improvement is to store pointers for predecessor/successor elements at each element. It does improve the predecessor/successor retrieval to just **O(1)** . However, we have a inserting or deleting elements becomes a costly procedure as we have to reassign every nearby value, **O(m)**.
 
-Here is the proposition. We build an ordered binary tree atop the m elements and mark every node that is a parent of the checked element. With each layer having two times less elements we only increased the total size of the array by two.
 
 
 
 #### See also
 * [X-fast tries](http://en.wikipedia.org/wiki/X-fast_trie) in Wikipedia
+* A [Video lecture on the subject](http://youtu.be/AjFtTQevtq0) from MIT OCW (the whole course is rad, totally a must watch)
