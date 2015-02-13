@@ -8,6 +8,8 @@ title = "Understanding routing in Bittorrents: algorithms behind Kademlia DHT"
 Routing at Bittorrent: understanding Kademlia DHTs (Distributed Hash Tables)
 ======================
 
+
+### (unfinished  draft)
 DHTs (Distributed Hash Tables) protocols are practical and useful tehcnologies and I am sure tat we are only beginning to untap their potential. Here is a good introduction to the core concepts behind the DHT Networks: [www.freedomlayer.org/articles/dht_intro.html](http://www.freedomlayer.org/articles/dht_intro.html)
 
 That article introduces Chord DHT protocol. In practice, many applications for untrusted networks use Kademlia, including the most succesful one to date: trackerless Bitttorrent file sharing.
