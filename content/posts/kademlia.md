@@ -32,6 +32,7 @@ That is, DHT network is used to fetch content stored at other nodes.  Content is
 All that is implemented within the [routing/dht](https://godoc.org/github.com/jbenet/go-ipfs/routing) IPFS subpackage.
 
 DHT routing implement the general routing interface defined at [`routing/routing.go`](https://github.com/jbenet/go-ipfs/blob/9dd12922b341d891a2365beb10d0142fd10fb235/routing/routing.go):
+
 ```go
 	type IpfsRouting interface {
 	    FindProvidersAsync(context.Context, u.Key, int) <-chan peer.PeerInfo
@@ -58,9 +59,10 @@ DHT routing implement the general routing interface defined at [`routing/routing
 	    Bootstrap(context.Context) error
 	}
 ```
+
 That corresponds to the folowing key operations:
 
-- **PutValue** - we put value into the hash table with `u.Key` as the key, and arbirtary `[]byte` as a value 
+- **PutValue** - we put an entry into the hash table with `u.Key` as the key, and arbirtary `[]byte` as the value 
 - **GetValue** - we resolve the key from the hash table
 - **Provide**  - A node anounces to DHT that it can serve a specific key
 - **FindPeer** - - we search for a peer node within the DHT network by its ID ( IPFS is a complicated project with a lot of concepts and they try to stick to a  consistent nomenclature. As they have plenty of graphs wit nodes, they call the DHT network nodes peers everywhere accross the project).
