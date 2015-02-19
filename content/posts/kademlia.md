@@ -68,7 +68,13 @@ the folowing key operations:
 - **Provide**  - A node anounces to DHT that it can serve a specific key
 - **FindPeer** - - we search for a peer node within the DHT network by its ID ( IPFS is a complicated project with a lot of concepts and they try to stick to a  consistent nomenclature. As they have plenty of graphs wit nodes, they call the DHT network nodes peers everywhere accross the project).
 
+The DHT package at `routing/dht` defines `IpfsDHT struct` that implements that interface.
 
+Here are the links we will ned in order to explore that implementation:
+
+* [The package at Sourcegraph.com](https://sourcegraph.com/github.com/jbenet/go-ipfs@master/.tree/routing/dht/dht.go), allows source code browsing where you can click on an item to see its definition (just like a proper IDE)
+
+* [godoc for the package](https://godoc.org/github.com/jbenet/go-ipfs/routing/dht), generated package documentation: signatures and docstrings of the public elements  
 
 
 
