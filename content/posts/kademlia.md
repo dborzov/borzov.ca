@@ -1,6 +1,6 @@
 +++
 date = "2015-01-30T08:36:54-07:00"
-draft = true
+draft = false
 title = "Understanding routing in Bittorrents: algorithms behind Kademlia DHT"
 
 +++
@@ -60,7 +60,8 @@ DHT routing implement the general routing interface defined at [`routing/routing
 	}
 ```
 
-That corresponds to the folowing key operations:
+That corresponds to 
+the folowing key operations:
 
 - **PutValue** - we put an entry into the hash table with `u.Key` as the key, and arbirtary `[]byte` as the value 
 - **GetValue** - we resolve the key from the hash table

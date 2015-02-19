@@ -1,6 +1,6 @@
 +++
 date = "2013-12-01T08:36:54-07:00"
-draft = true
+draft = false
 title = "Predecessor search for Big Data: x-fast tries, locality of reference and all that"
 
 +++
