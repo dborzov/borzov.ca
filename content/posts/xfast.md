@@ -119,21 +119,21 @@ In order to look up the predecessor movie for 1975 we start the binary search fo
 What would it take to add another movie, say, "Not a Real Movie X (1975)"? That would mean we need to go through all the parent nodes and make sure they are added to the corresponding level hash functions.  
 
 #### Practical Examples
-Comparing search time asymptotics for X-fast tries and search trees, we see that X-fast shines when `log[N]` grows faster than `log[log[M]]`, or when `N >> log[M]`.
+Comparing search time asymptotics for X-fast tries and search trees, we see that X-fast shines when `log[N]` grows faster than `log[log[M]]`, which comes down to the criteria of `N >> log[M]`.
 
 So let's come up with some practical examples of where X-fast trie can be useful:
 
-* Imagine you are developing a flight search website. For the given datetime of expected departure we return the list of all the next flights. Flights are updated and changed frequently. Datetime minutes can make up all the possible `u` values, and the flights to a specific direction make up `{n}`.
+* Imagine you are developing a flight searching website. For the given datetime of expected departure we return the list of all the upcoming flights. Flights are updated and changed frequently. Datetime minutes can make up all the possible `u` values, and the flights to a specific direction make up `{n}` set.
 
-* IP Packet Routing: an internet router needs to redirect the IP packets to other routers with the IP closest to the requested one.
+* IP/other network protocols Packet Routing: an internet router needs to redirect the IP packets to other routers with the IP closest to the requested one.
 
-* Trackless bitTorrent peer-to-peer networks look up content by hash and the nodes with IDs closest to this hash (by some metric) are assigned with tracking this content. X-fast trie can get useful to lookup content in huge networks with large number of nodes (so that `n >> log[M]`).  (Hey! By the way, see my other [post](http://www.borzov.ca/posts/kademlia/) on the subject!).
+* Trackless bitTorrent peer-to-peer networks look up content by hash and the nodes with IDs closest to this hash (by some metric) are assigned with tracking that content. X-fast trie can get useful to lookup content in huge networks with large number of nodes (so that `n >> log[M]`).  (Hey! By the way, see my other [post](http://www.borzov.ca/posts/kademlia/) on the subject!).
 
 #### Data Structures with locality of reference
 
-X-fast trie is an example of the data structure where locality of reference is stored. Another one we saw, more common one, is, of course, the search tree.
-
-We looked into only one example within the large family of data structures tailored for various limiting cases  and applications. For example, the application  does not have to be one-dimensional. One can devise, for example, a similar 2D structure that tracks locality of reference information that can get useful in, say geolocation applications. Or when we develop an RTS game and want to find the closest unit of some kind efficiently. And so on.
+X-fast trie is an example of the data structure where locality of reference is tracked. Another one, more famous one, would of course be the search tree. Together data structures like these compose a large family of cases where some concept of locality matters. The ones used in practice tend to share many features with the x-fast trie case we considered here.
+ 
+It is easy to see how wide the domain of locality-sensitive applications is. It can be extended to multidimensional cases too. Say, geolocation applications would involve ability to look up objects closest to a specific point. How can one approach this? A search tree can be a good start, but for sufficiently large maps we can devise some equivalent of 2D x-fast trie or move to other fancier [solutions](http://en.wikipedia.org/wiki/Y-fast_trie). 
 
 
 Pretty nice, huh?
