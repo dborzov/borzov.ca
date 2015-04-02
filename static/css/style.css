@@ -99,3 +99,8 @@ ul.tagcloud li  { margin: 0; padding: 0 10px; display: inline; }
 
 /* latex math */
 span.math img   { margin-bottom: -7px; }
+
+.photo {
+  padding: 5px;
+  border: 1px solid #a1a1a1;
+}
