@@ -1,6 +1,5 @@
 +++
 date = "2015-01-23T12:43:09+05:00"
-draft = true
 title = "Dmitry Peter Borzov"
 
 +++
