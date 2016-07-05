@@ -1,10 +1,10 @@
 +++
-date = "2015-01-23T12:43:09+05:00"
+date = "2015-01-23T12:43:00+00:00"
+draft = false
 title = "Dmitry Peter Borzov"
 
 +++
-
-## Hi, I am Dmitry Peter Borzov
+## Hi, I am Dmitry Borzov
 
 I specialize in development of web and data analysis applications. My experience includes working with javascript [d3, Angular, Ember, node], golang, python [pandas, scipy, django, flask] and Java[Hadoop/MapReduce ecosystem, ElasticSearch] among other technologies.
 
