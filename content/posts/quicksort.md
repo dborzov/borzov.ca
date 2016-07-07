@@ -1,11 +1,12 @@
 +++
 date = "2016-07-05T08:36:54-07:00"
-title = "Estimating random algorithms (Part I): understanding quicksort"
+title = "Analysing random algorithms (Part I): deriving quicksort's time complexity"
 +++
 
 
-Deriving asymptotics for quicksort
+Analysing random algorithms (Part I)
 ==============================
+## Estimating the quicksort's time performance
 
 
 <script type="text/javascript" async
@@ -18,6 +19,8 @@ Deriving asymptotics for quicksort
 
 
 Randomized algorithms are fascinating and somewhat misterious: they can deliver surprising efficiency but being able to actually understand what gives them their properties can be pretty hard at times.
+
+
 
 Specifically, deriving the execution time estimation can get pretty challenging in general case, in a sharp contrast to the determenistic algorithms. For the average execution time, for example, we have to consider each of the possible random outcomes along with its probability and then average out over all of them. Not to mention that just the average time may not enough to characterize the alorithm and we may have to investigate metrics beyond just the average. In fact, the mathematical expressions behind those easily gets so hairy that they tend to be omitted at all in many educational materials and textbooks.
 
@@ -87,8 +90,3 @@ so the solution is `f(n) \sim n \log (n)`.
 
 **What we learned: We learned the boundaries of what to expect
 n \log n <= f(n) <= n^2
-
-
-<p style="text-align:center">
-  `x = (-b +- sqrt(b^2-4ac))/(2a) .`
-</p>
