@@ -26,6 +26,15 @@ I specialize in development of web and data analysis applications. My experience
 
 ## Writings
 
+
+#### [*June 2016* Analysis of randomized algorithms (Part I)](/posts/quicksort/)
+
+Quantitative analysis of randomized algorithms may look intimidating, but a couple of simple tricks goes the long way. We look at how to build some intuition and understanding behind the algorithm's performance using the quicksort as an example.
+
+#### [*March 2016* Fixing jmeter's java.security.cert.CertificateException error](/posts/quicksort/)
+
+A problem I had trying to make jmeter work on my machine and what fixed it
+
 #### [*Jan 2015* Routing at Bittorrent: understanding Kademlia DHTs (Distributed Hash Tables)](/posts/kademlia/)
 
 Using NetVis framework to visualize algorithms behind Kademlia-styled DHT.
