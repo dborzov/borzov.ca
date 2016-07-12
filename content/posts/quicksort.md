@@ -4,7 +4,7 @@ title = "Analysing random algorithms (Part I): deriving quicksort's time complex
 +++
 
 
-Analysing random algorithms (Part I)
+Analysis of randomized algorithms (Part I)
 ==============================
 ## Estimating the quicksort's time performance
 
@@ -22,9 +22,9 @@ Randomized algorithms are fascinating and somewhat misterious: they can deliver 
 
 
 
-Specifically, deriving the execution time estimation can get pretty challenging in general case, in a sharp contrast to the determenistic algorithms. For the average execution time, for example, we have to consider each of the possible random outcomes along with its probability and then average out over all of them. Not to mention that just the average time may not enough to characterize the alorithm and we may have to investigate metrics beyond just the average. In fact, the mathematical expressions behind those easily gets so hairy that they tend to be omitted at all in many educational materials and textbooks.
+Specifically, deriving the execution time estimation can get pretty challenging in general case, in a sharp contrast to the deterministic algorithms. For the average execution time, for example, we have to consider each of the possible random outcomes along with its probability and then average out over all of them. Not to mention that just the average time may not enough to characterize the alorithm and we may have to investigate metrics beyond just the average. The mathematical expressions behind those easily gets so hairy that they tend to be omitted at all in many educational materials and textbooks.
 
-However, that complexity is also a bit deceptive in practice. The keys is that we are usually only interested in asymptotics, that is the behaviour in some limit, such as the limit of large dataset. That simplifies the problem immensely and means that, with a bit of experience behind our belt, we can learn to arrive at the answer pretty easily. It all comes down to just carefully studying what terms are important in our case of interest and what are not.
+However, that complexity is also a bit deceptive in practice. The key is that we are usually only interested in asymptotics, that is the behaviour in some limit, such as the limit of large dataset. That simplifies the problem immensely and means that, with a bit of experience behind our belt, we can learn to arrive at the answer pretty easily. It all comes down to carefully studying what terms are important in our case of interest and what are not.
 
 Let's illustrate this with an example. We will look at the asymptotics of what is probably the most famous random-based algorithm: the quicksort.
 
@@ -47,46 +47,73 @@ The pivot element choice being random means that the execution time is the avera
   `f(n) = \frac{1}{n} \sum_{m=1...n} [ f(m) + f(n-m) + c_{1} + c_{2} n ] `
 </p>
 
-Now this expression does not look very friendly.
+This expression does not look very friendly. Let's start with building some intuition for what the solution might look like.
 
 
 ## Boundaries
 
 Let's see what kind of solution we may expect here.   
 
-Why do we need to go through the deriviation at all? Unless you are working in alorithms research, it is unlikely that we would ever . Numerical simulation is good enough. My reason is that it helps build a proper understanding of what is going on: see which decisions in our design matter and which are not.
+Why do we need to go through the derivation at all? Unless you are working in alorithms research, it is unlikely that we would ever . Numerical simulation is good enough. My reason is that it helps build a proper understanding of what is going on: see which decisions in our design matter and which are not.
 
 That is why the best thing is to look into the custom cases what kind of answer we may reasonably expect.
 
-Let's look at the worst case `f_{worst}(n)`: this case unlikiest ever: every time we manage to make the worst pivot element ever: the smaller subset only has the pivot element, and the other one contains all the other ones, `n-1`. We then we have to make the recursive call on that set.   
+Let's look at the worst case `O(n)`: this case unlikiest ever: every time we manage to make the worst pivot element ever: the smaller subset only has the pivot element, and the other one contains all the other ones, `n-1`. We then we have to make the recursive call on that set.   
 
-`f_{worst}(n) = f_{worst}(n-1) + n`
+<p style="text-align:center">
+  `f_{\text{worst}}(n) = f_{\text{worst}}(n-1) + n`
+</p>
 
 We can just unfold the expression recursively:
 
-`f_{worst}(n) = f_{worst}(n-1) + n = f_{worst}(n-2) + (n-1) + n = f_{worst}(1) + \sum_{x=1..n} x`
+<p style="text-align:center">
+  `f_{\text{worst}}(n) = f_{\text{worst}}(n-1) + n = f_{\text{worst}}(n-2) + (n-1) + n = f_{\text{worst}}(1) + \sum_{x=1..n} x`
+</p>
 
-Since we are only interested in asymptotics we don't even need to be careful with the arithmetic sum expression  `\sum_{x=1..n} x`. We can just apply the fact that with the paring up of the elements, the average is about `\frac{x}{2}` and we get `x` of them, so `f_{worst}(n) = n^2`. In the worst case, quicksort looks like the naive sort implementation: we keep selecting the smallest (or the biggest) element of the array, insert it into the very beginning (or end).
+
+Since we are only interested in asymptotics we don't even need to be careful with the arithmetic sum expression  `1 + 2 + 3 + .. + n`. We can just apply the fact that with the paring up of the elements, the average is about `x/2` and we get `x` of them, so
+
+<p style="text-align:center">
+  `f_{\text{worst}}(n) = n^2`
+</p>
+
+In the worst case, quicksort looks like the naive sort implementation: we keep selecting the smallest (or the biggest) element of the array, insert it into the very beginning (or end).
 
 Now let's look at the best case: when every pivot we choose turns out to be the median element of the array! The two subsets are then exactly half in size:
 
-`f_{best}(n) = 2 \cdot f_{best}(\frac{n}{2}) + n`
+<p style="text-align:center">
+  `f_{\text{best}}(n) = 2 \cdot f_{\text{best}}(\frac{n}{2}) + n`
+</p>
+
 
 Continuing iteration, we get
 
-`f_{best}(n) = 2 \cdot f_{best}(\frac{n}{2}) + n = 4 \cdot f_{best}(\frac{n}{4}) + 3*n`
+<p style="text-align:center">
+  `f_{\text{best}}(n) = 2 \cdot f_{\text{best}}(\frac{n}{2}) + n = 4 \cdot f_{\text{best}}(\frac{n}{4}) + 3*n`
+</p>
 
-This recursive expression looks similar to the one we for the worst case, except. Let's make it the iterative with introducing `x`:  `n=2^{x}` (or `x= \{log}_{2} n`). Now we can express the same relation in terms of `g(x)=f(n)=f(2^{x})`:
 
-`g(x) = 2 g(x-1) + 2^{x}`
+This recursive expression looks similar to the one we for the worst case, except. Let's make it the iterative with rewriting this relation in terms of a new variable `x ~ log n`:  
+
+<p style="text-align:center">
+ `n=2^{x} \text{ or } x= \{log}_{2} n`
+
+
+
+Now we can express the same relation in terms of `g(x)=f(n(x))`:
+
+<p style="text-align:center">
+  `g(x) = 2 g(x-1) + 2^{x}`
+</p>
 
 Solving this relation gets us
 
-`g(x-1) = 2 g(x-2) + \frac{1}{2} 2^{x}`
+<p style="text-align:center">
+  `g(x-1) = 2 g(x-2) + \frac{1}{2} 2^{x}`
+</p>
 
-`g(x) = 2 g(x-1) + 2^{x} = 4 g(x-2) + 2 \cdot \frac{1}{2} 2^{x} + 2^{x} = .. = g(1) + x \cdot 2^{x}`
+<p style="text-align:center">
+  `g(x) = 2 g(x-1) + 2^{x} = 4 g(x-2) + 2 \cdot \frac{1}{2} 2^{x} + 2^{x} = .. = g(1) + x \cdot 2^{x}`
+</p>
 
-so the solution is `f(n) \sim n \log (n)`.
-
-**What we learned: We learned the boundaries of what to expect
-n \log n <= f(n) <= n^2
+so the solution is `f(n) ~ n log (n)`.

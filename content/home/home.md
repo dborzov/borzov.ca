@@ -31,7 +31,7 @@ I specialize in development of web and data analysis applications. My experience
 
 Quantitative analysis of randomized algorithms may look intimidating, but a couple of simple tricks goes the long way. We look at how to build some intuition and understanding behind the algorithm's performance using the quicksort as an example.
 
-#### [*March 2016* Fixing jmeter's java.security.cert.CertificateException error](/posts/quicksort/)
+#### [*March 2016* Fixing jmeter's java.security.cert.CertificateException error](/posts/jmeter)
 
 A problem I had trying to make jmeter work on my machine and what fixed it
 
