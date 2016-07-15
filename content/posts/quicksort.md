@@ -15,10 +15,10 @@ Analysis of randomized algorithms (Part I)
 
 
 
-### *Abstract:* Building intuition for randomized algorithms and deriving the processing time asymptotic behaviour for quicksort
+### *Abstract:* It is not that hard to build skills for analysing randomized algorithms. Here I list some of the basic tricks that work for me using quicksort as an example
 
 
-Randomized algorithms are fascinating and somewhat misterious: they can deliver surprising efficiency but being able to actually understand what gives them their properties can be pretty hard at times.
+Randomized algorithms are fascinating to me. Many classic algorithms are somewhat obvious in the hindsight: you can see right away their value and what makes them good. That is not the case for Randomized algorithms. They can surprise you with how efficient they can be on average. I remember being amazed when I learned that the randomized algorithm for finding a median element in an unsorted graph has asymptotic performance being linearly proportional to the size of the array, for example. but being able to actually understand what gives them their properties can be pretty hard at times.
 
 
 
@@ -47,10 +47,12 @@ The pivot element choice being random means that the execution time is the avera
   `f(n) = \frac{1}{n} \sum_{m=1...n} [ f(m) + f(n-m) + c_{1} + c_{2} n ] `
 </p>
 
-This expression does not look very friendly. Let's start with building some intuition for what the solution might look like.
+This expression does not look very friendly.
+
+Let's start with building some intuition for what the solution might look like.
 
 
-## Boundaries
+## What does the solution may look like?
 
 Let's see what kind of solution we may expect here.   
 
@@ -117,3 +119,30 @@ Solving this relation gets us
 </p>
 
 so the solution is `f(n) ~ n log (n)`.
+
+### We learned the upper boundaries and the lower boundaries for what we might expect as the solution.
+
+
+## Building up some intuition
+
+The second thing that I do is I work through some custom cases. We looked at the absolutely worst case and the perfect choice, but in practice it is likely to be somewhere in between on every step. Let's go through the case of  where somehow we happen to split the array into `1/10n` and `9/10n` on every step.
+
+Then the performance time would be of order:
+
+
+<p style="text-align:center">
+  `f_{\text{sample}}(n) = f_{\text{best}}(\frac{9 n}{10}) +  f_{\text{sample}}(\frac{n}{10}) + n`
+</p>
+
+The expression may not look very trivial on the first glance. This recursive expression has multiplication instead of addition in the arguments of its function and that complicates things. However it is easy to notice that it is pretty similar to the one we already tackled, the one for the best case scenario. We were able to reduce it to something obvious by rewriting it in terms of a different variable. Let's can apply the same trick here:
+
+<p style="text-align:center">
+`n = 10^{x}, x = \log_{10} n \text{ and } g(x) = f(x(n))`
+  `g(x) = g(x - \log_{10}\frac{10}{9}) +  g(x-1) + 10^{x}`
+</p>
+
+ `lg (10/9) = lg(1 + 1/9) = 0.04`.
+
+
+#### References
+[1] "Algorithms", Dasgupta, C. H. Papadimitriou, and U. V. Vazirani, §2.4 "Medians", pp.64-66
