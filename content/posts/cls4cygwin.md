@@ -1,24 +1,26 @@
 +++
 date = "2015-12-03T19:28:54-07:00"
-title = "Enabling cls/Cmd+K for Cygwin Bash on ConEmu"
+title = "Enabling iTerm's `Cmd+K` hotkey for Cygwin shell with ConEmu"
 +++
 
-Sometimes I have to use a shell (a command-line interface) on Windows and overall it is pretty challenging for me.
-Windows is fundamentally different from the Unix/POSIX conventions I got used to when working with Linux and MacOSX and the native shells  for Windows (cmd/Powershell) are quite different.  
+## Enabling iTerm's `Cmd+K` hotkey for Cygwin shell with ConEmu
 
-Fornunatelly, there is Cygwin, an open-source project that wraps the Windows functioanllity and makes some imitation of a bash we came to know and love that offers something similar to [bash](en.wikipedia.org/wiki/Cygwin). It is pretty decent for most every day uses and I like it a lot.
+Sometimes I have to use the shell (a command-line interface) on Windows and that sucks.
 
-One thing that helps is a decent Terminal application (the thing that provides GUI for the cli session). [ConEmu](https://github.com/Maximus5/ConEmu) is pretty great, highly customizable and has all the basic features.
+Since Windows ecosystem (including shells, `Powershell` and `cmd`) has been historically quite removed from POSIX/UNIX patterns we came to know and love, even performing basic tasks gets challenging for me.  
 
-One thing I missed from iTerm2 is to be able to clear the session screen completely with "Cmd+K" letters. I got investigating and I am happy to report that I found the solution.  
+Fornunatelly, there is [Cygwin](en.wikipedia.org/wiki/Cygwin), an open-source project that wraps the Windows system calls and makes an imitation of a bash shell we came to know and love. It is pretty decent for most every day uses.
 
-It turns out that there is another key difference between Unix and Windows shells: in Unix, keeping track of printed content is the responsibility of the terminal application, but for Windows it is a part of the shell's session. As a result, clearing the screen can be done with a shell command, `cls` in their case.
+A decent terminal emulator application helps too. I use and recommend [ConEmu](https://github.com/Maximus5/ConEmu).
 
+One thing I missed from iTerm2 is to be able to clear the session screen completely with "Cmd+K" hotkey. Here is how to reproduce the same functionality for Windows/ConEmu/Cygwin.  
 
-So since Cygwin is still a Windows shell, clearing screen is a shell command as well, which is invoked with an escape code. Here it is: `echo -e '\0033\0143'`.
+There is a key difference between Unix and Windows shells: in Unix, keeping track of the buffer content is the responsibility of the terminal emulator (iTerm2, for example), however in Windows it is a part of the shell's session. As a result, clearing the buffer can be done with a shell command, `cls` in their case.
 
-Here is how to set it up:
+Since Cygwin is still a Windows shell, clearing screen is a shell command as well, which is invoked with an escape code. Here it is: `echo -e '\0033\0143'`.
 
-![Img](/conemu.png)
+Here is how to set up the hotkey binding with Conemu to achive the Cmd+K behaviour of iTerm2:
 
-Let's set up ConEmu's hot key to use the command. Open up the ConEmu settings (right click on the button)
+<p style="text-align:center">
+   <img width="500px" src="/conemu.png">
+</p>

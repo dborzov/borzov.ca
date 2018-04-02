@@ -1,7 +1,7 @@
 +++
 date = "2015-01-23T12:43:00+00:00"
 draft = false
-title = "Dmitry Peter Borzov"
+title = "Dmitry Borzov"
 
 +++
 ## Hi, I am Dmitry Borzov
@@ -34,6 +34,10 @@ Quantitative analysis of randomized algorithms may look intimidating, but a coup
 #### [*March 2016* Fixing jmeter's java.security.cert.CertificateException error](/posts/jmeter)
 
 A problem I had trying to make jmeter work on my machine and what fixed it
+
+#### [*Dec 2015* Enabling iTerm's `Cmd+K` hotkey for Cygwin shell with ConEmu](/posts/cls4cygwin/)
+
+Reproducing iTerm's `Cmd+K` in Windows Cygwin.
 
 #### [*Jan 2015* Routing at Bittorrent: understanding Kademlia DHTs (Distributed Hash Tables)](/posts/kademlia/)
 
