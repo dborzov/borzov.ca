@@ -6,7 +6,9 @@ title = "Dmitry Borzov"
 +++
 ## Hi, I am Dmitry Borzov
 
-I specialize in development of web and data analysis applications. My experience includes working with javascript [d3, Angular, Ember, node], golang, python [pandas, scipy, django, flask] and Java[Hadoop/MapReduce ecosystem, ElasticSearch] among other technologies.
+I do software development and data analysis. 
+
+Keywords of the things I am into: network protocols, distributed algorithms, databases, machine learning.
 
 ## Open source projects
 
