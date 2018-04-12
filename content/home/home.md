@@ -10,6 +10,9 @@ I do software development and data analysis.
 
 Keywords of the things I am into: network protocols, distributed algorithms, databases, machine learning.
 
+Reach me at d@borzov.ca
+
+
 ## Open source projects
 
 (also, see my [github account page](https://github.com/dborzov))
