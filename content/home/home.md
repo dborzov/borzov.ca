@@ -31,9 +31,9 @@ Published peer-reviewed research papers:
 (also, see my [github account page](https://github.com/dborzov))
 
 
-#### [**py-serene-audio-mode**: tone down explosions, crank up the dialogue.](https://github.com/dborzov/py-serene-audio-mode)
+#### [**serene-audio-mode**: tone down explosions, crank up the dialogue.](https://github.com/dborzov/serene-audio-mode)
 
-Tired of dramatic volume swings in modern movies? Trying to watch something without disturbing the others? This tool selectively reduces the volume of loud, bass-heavy, and jarring sounds (explosions, gunfire, and aggressive musical beats), while leaving the rest (like dialogue) untouched. No more scrambling for the remote when a whisper turns into an explosion – just consistent, comfortable listening. 
+Tired of dramatic volume swings in modern movies? Trying to watch something without disturbing the others? This tool selectively reduces the volume of loud, bass-heavy, and jarring sounds (explosions, gunfire, and aggressive musical beats), while leaving the rest (like dialogue) untouched. No more scrambling for the remote when a whisper is followed by an explosion that reverberates down your spine – just consistent, comfortable listening. 
 
 
 #### [**lsp**: `ls` shell command alternative](https://github.com/dborzov/lsp)
@@ -48,8 +48,12 @@ Tired of dramatic volume swings in modern movies? Trying to watch something with
 
  It uses in-memory suffix array to lookup index entries. RusticSearch is minimalistic in design and perfect when adding simple search functionality where [fancier solutions](http://www.elasticsearch.org/) can be an overkill.
 
-### Words in specific order
+# Words in specific order
 
+
+#### [*Feb 2025* How does serene-audio-mode work?](/posts/serene/)
+
+Getting into the weeds of the audio filtering algorithm used by `serene-audio-mode` (see above).
 
 #### [*June 2016* Analysis of randomized algorithms (Part I)](/posts/quicksort/)
 
