@@ -8,7 +8,7 @@ title = "Predecessor search for Big Data: x-fast tries, locality of reference an
 Predecessor search for Big Data: x-fast tries, locality of reference and all that
 ==============================
 
-### *Abstract:* An intro to data structures with locality of reference-type features. We review x-fast tries in some detail and then talk about similar data structures, where they shine and where they don't
+#### *Abstract:* An intro to data structures with locality of reference-type features. We review x-fast tries in some detail and then talk about similar data structures, where they shine and where they don't
 
 
 Consider a set `{n}` of `n` integers within the range `0..u-1`. Let's assume we need to build a data structure that allows for performing of the following operations efficiently:

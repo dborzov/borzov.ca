@@ -5,22 +5,22 @@
 /* general style */
 body    { font: 17px/25px 'Merriweather', serif;
           margin: 0; padding: 0; font-weight: 300; }
-a       { color: black; font-weight: 400; }
-a:hover { color: #CC0033; }
+a       { color: #335088; font-weight: 400; }
+a:hover { color: #CC0000; }
 
 /* headlines */
 h1, h2, h3, h4, h5, h6      { font-family: 'Merriweather', serif;
-                              font-weight: 300; color: #223;  }
+                              font-weight: 300; color: #CC0033;  }
 h1 a, h2 a, h3 a, h4 a,
 h5 a, h6 a                  { text-decoration: none; }
 h1 a:hover, h2 a:hover,
 h3 a:hover      { text-decoration: underline; }
 h1.title                    { width: 560px; }
 h1, h2                      { margin: 10px 0 25px 0; }
-h1                          { font-size: 42px; line-height: 52px; }
-h2                          { font-size: 32px; line-height: 40px; }
-h3                          { font-size: 18px; line-height: 40px; background: #FED0D0; padding: 18px;}
-h4                          { font-size: 24px; margin-bottom: 10px;}
+h1                          { font-size: 32px; line-height: 52px; }
+h2                          { font-size: 22px; line-height: 40px; }
+h3                          { font-size: 20px; line-height: 40px; background: padding: 18px;}
+h4                          { font-size: 18px; margin-bottom: 10px;}
 
 
 
