@@ -24,7 +24,7 @@ So I asked around and got in touch with people with university degrees that sugg
 
 What I learned is summarized below. 
 
-Was it useful to me? As a results of all this, we found this "one weird trick" that works better for my kids than the other things we've tried. And it wasn't Duolingo.
+Was it useful to us? As a results of all this, we found this "one weird trick" that works better for my kids than the other things we've tried. And it wasn't Duolingo.
 
 The trick is **regular exposure to enjoyable French video content that the kids choose themselves**. It can be as little as 10-15 minutes a day; what matters is that it's regular (ideally, daily) and part of their routine.
 
@@ -48,7 +48,7 @@ I learned that a fair share of what these books talk about is how their academic
 
 So if you are curious, here's an actionable summary of **what works**, based on my understanding of what most of these sources and "schools of thought" agree upon, with all that other drama and fancy words filtered out. Compiled for you, so that you don't have to.
 
-Here it goes:co
+Alright, here it goes:
 
 #### 1. Hardware-Accelerated Subconscious Learning
 
@@ -110,11 +110,11 @@ _"Hier il pleuvait, mais aujourd'hui il fait beau"_.
 
 \- No, it's much, much less than that.
 
-When we work with sentence examples where the point is to translate them into English, the meaning becomes irrelevant. It's no longer about understanding a message that relates to the world around us, instead it's nowthis bizarre puzzle of how to convert one sequence of symbols into another.
+When we work with sentence examples where the point is to translate them into English, the meaning becomes irrelevant. It's no longer about understanding a message that relates to the world around us, instead it's now this bizarre puzzle of how to convert one sequence of symbols into another.
 
 Kids are wired to be great at mapping words into meaning. Doing puzzles where you map words to some other words is not that:
 
-![Img](http://localhost:1313/img/rain.png)
+![Img](/img/rain.png)
 
 Imagine [Professor Pavlov](https://en.wikipedia.org/wiki/Classical_conditioning) putting his mind to devise another cruel experiment: conditioning his poor dogs to become bored and zone out at the first sounds of French. How would you do it?
 
@@ -223,9 +223,9 @@ That means that any mini-game can be solved easily without prior knowledge of th
 The point is to re-expose the child to meaningful French, not to test them.
 
 
-#### 7. Avoid Getting Stuck
+#### That's all, folks!
 
-There you have it, the thinking behind this little side project of mine called Frenchirix. Maybe you can try it and maybe your kids will find it useful too.
+There you have it, my understanding of academic science about language learning, and how I am trying to apply this  to my little side project called Frenchirix.
 
 If you have any feedback, or better ideas, please email me at [d@borzov.ca](emailto:d@borzov.ca).
 
