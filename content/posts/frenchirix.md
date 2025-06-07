@@ -16,13 +16,15 @@ In this post, I want to share a bit about my my little dive into the academic fi
 It started with me wanting to help my kids with French at school.
 
 
-But I realized that if I want to do this right, I need to start by reading up  first on any  objective, scientifically proven facts about how people learn the language. So that I can go beyond just pestering my kids with whatever random misconceptions about this happen to sneak into my head over the years. And so that I don't just parrot the marketing of language learning products trying to sell things to me.
+But I realized that if I want to do this right, I need to start by reading up  first on any  objective, scientifically proven facts about how people learn languages. I did not want to waste time pestering my kids with whatever random misconceptions about this happen to sneak into my head that will end up being useless. I didn't want to parrot the marketing of language learning products trying to sell things to me.
 
 
-I asked around and got in touch with people with university degrees that suggest they should know the answers: linguistics, education, and second language acquisition. 
+So I asked around and got in touch with people with university degrees that suggest they should know the answers: linguistics, education, and second language acquisition. 
 
 
-As a result of all this, we found this "one weird trick" that worked better for my kids than the other things we tried. And it wasn't Duolingo.
+What I learned is summarized below. 
+
+Was it useful to me? As a results of all this, we found this "one weird trick" that works better for my kids than the other things we've tried. And it wasn't Duolingo.
 
 The trick is **regular exposure to enjoyable French video content that the kids choose themselves**. It can be as little as 10-15 minutes a day; what matters is that it's regular (ideally, daily) and part of their routine.
 
@@ -46,7 +48,7 @@ I learned that a fair share of what these books talk about is how their academic
 
 So if you are curious, here's an actionable summary of **what works**, based on my understanding of what most of these sources and "schools of thought" agree upon, with all that other drama and fancy words filtered out. Compiled for you, so that you don't have to.
 
-Here it goes:
+Here it goes:co
 
 #### 1. Hardware-Accelerated Subconscious Learning
 
