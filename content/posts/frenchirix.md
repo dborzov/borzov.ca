@@ -7,96 +7,146 @@ title = "Frenchirix and the Research on How We Learn Languages"
 # **Frenchirix and the Research on How to Learn Languages**
 
 
-#### *Abstract:* What are the actual scientific findings about what works and what doesn't for learning natural languages? To find out, I got in touch with people with university degrees that suggest they should know the answers: linguistics, education, and second language acquisition. The blogpost is the  summary of what I found out.
+#### I knew from my own experience that many common ways to learn a language feel productive but are a waste of time. To help my kids with French without repeating my mistakes, I went looking for scientific evidence of what actually works. This post is a summary of some counter-intuitive principles I found, and how we are using them at home with Frenchirix.
+
+Table of Contents:
+* [Introduction](#introduction)
+* [The Science of What Works for Language Learning](#the-science-of-what-works-for-language-learning)
+    * [1. Like learning to bike](#1-like-learning-to-bike)
+    * [2. Input Before Output](#2-input-before-output)
+    * [3. Communication Tool](#3-communication-tool)
+    * [4. Meaning is the Fuel](#4-meaning-is-the-fuel)
+    * [5. It's Okay to Be Confused](#5-its-okay-to-be-confused)
+    * [6. Use the Real Thing, not Book Language](#6-use-the-real-thing-not-book-language)
+* [Frenchirix](#frenchirix)
+* [References](#references)
+* [Footnotes](#footnotes)
 
 
-In this post, I want to share a bit about my my little dive into the academic fields related to learning the languages. And about whether they tell us anything we don't  know yet about what actually works and what does not for that.
+# Introduction
+I wanted to help my kids with their French at school, but I realized I had no idea how people learn languages.
+
+From my own experience, I knew what didn't work. I knew how easy it is to do things that _feel_ like learning, but are mostly a waste of time. But knowing *what fails* does not mean I knew *what works*. And I didn't want my kids to waste their time like I wasted mine.
+
+So I decided to try something different. Instead of falling for the latest trend in social media or getting caught up in some product's marketing, I'd start with looking into academic research. 
+
+My thinking was that if the truth is out there:
 
 
-It started with me wanting to help my kids with French at school.
+![Img](/img/truth.jpg)
 
 
-But I realized that if I want to do this right, I need to start by reading up  first on any  objective, scientifically proven facts about how people learn languages. I did not want to waste time pestering my kids with whatever random misconceptions about this happen to sneak into my head that will end up being useless. I didn't want to parrot the marketing of language learning products trying to sell things to me.
+ ...it's more likely to be found in those peer-reviewed scientific papers  so old they were typed on a typewriter. It must be hidden somewhere in the halls of dusty academic research departments. 
+ 
+ Not because the hippies and hipsters who hang out there are particularly cool, but because that's where understanding is (hopefully) based on scientific evidence that comes from things like controlled experiments with real statistical power. 
+
+ And I also wanted something from papers with MRI studies:
+
+ ![Img](/img/mri.gif)
+
+This is how you get to the real stuff, right?
 
 
-So I asked around and got in touch with people with university degrees that suggest they should know the answers: linguistics, education, and second language acquisition. 
 
 
-What I learned is summarized below. 
+So I asked around and got in touch with people with degrees in linguistics, education, and second language acquisition. They recommended 
+[books and concepts to look up [1-5]](#references). I read the books and researched the concepts [[8]](#footnotes). 
 
-Was it useful to us? As a results of all this, we found this "one weird trick" that works better for my kids than the other things we've tried. And it wasn't Duolingo.
+Much of it was academics arguing with one another. Like they all mention [Noam Chomsky](https://en.wikipedia.org/wiki/Noam_Chomsky) and tell in great detail how wrong he is about everything. But I didn't particularly care about all that stuff. 
 
-The trick is **regular exposure to enjoyable French video content that the kids choose themselves**. It can be as little as 10-15 minutes a day; what matters is that it's regular (ideally, daily) and part of their routine.
+But beneath the drama, I found exactly what I was looking for: a set of things, proven to work, that I never would have arrived at on my own.
 
-But that's only part of it. It also needs to be complemented with **spaced repetition**: revisiting the same content, the same dialogue, and vocabulary every couple of days for some time.
+With that new understanding, I set out to the ultimate goal: apply this to help my kids. 
+
+![Img](/img/hide.your.kids.jpg)
+
+After some trial and error, we found this _"one weird trick"_ that seems to work pretty well. And it wasn't Duolingo.
+
+It's a double-punch: 
+* regular exposure to enjoyable French media that they pick themselves,  
+* spaced repetition of that same content.
+
+ Altogether, this could be only 10-15 minutes a day; but if it's regular, the impact for the money is huge.
+
+Getting them to watch more TV was easy: I did not get any complaints for extra screentime. 
+
+The hard part was doing the spaced repetition right:
+*  You want to track what you brushed up on and when, 
+* You want to have some excuse to go through the dialogue again word by word,
+
+..and to do all that without forcing it on the kid too much.
+
+I couldn't find a good tool for it, so I started making one myself. 
+
+This evolved into a little side project of mine called [Frenchirix](https://frenchirix.borzov.ca/).
+The name is a spoof of [Asterix](https://en.wikipedia.org/wiki/Asterix) (or if you are their copyright lawyer, of [ancient Gallic names](https://en.wikipedia.org/wiki/Vercingetorix) [[6]](#footnotes)).
+
+This blog post is about all that.
 
 
-For the second part, I am building a little side project called [Frenchirix](https://frenchirix.borzov.ca/) and I have been working on it low-key in my spare time. The name is a spoof of [Asterix](https://en.wikipedia.org/wiki/Asterix) (or if you are their copyright lawyer, of [ancient Gallic names](https://en.wikipedia.org/wiki/Vercingetorix) [[6]](#footnotes)).
-
-
-This tool is designed to make this second part go a bit smoother: it makes it easier to re-expose kids to French dialogue that's meaningful to them.
 
 ### **The Science of What Works for Language Learning**
 
-So, like I said, I talked to the folks  with university degrees in the relevant fields. 
-
-I talked to them, asked questions I had and then asked for recommendations for the best sources I could use to learn where their respective academic fields are at when it comes to learning languages.
-
 You can see the [list of references I read as a result of all this at the end of this post](#references).
 
-I learned that a fair share of what these books talk about is how their academic competitors got it wrong, and all that stuff about different "schools of thought" on the subject. The stuff that's clearly important to the folks who are into it, but I didn't particularly care about for my purposes.
+So if you are curious, here's an actionable summary of _what works_, based on my understanding of what most of the [sources](#references) and "schools of thought" agree upon, with all that other drama and fancy words filtered out. 
 
-So if you are curious, here's an actionable summary of **what works**, based on my understanding of what most of these sources and "schools of thought" agree upon, with all that other drama and fancy words filtered out. Compiled for you, so that you don't have to.
+Here it goes:
+1. [Like Learning to Bike](#1-like-learning-to-bike)
+2. [Input Before Output](#2-input-before-output)
+3. [Communication Tool](#3-communication-tool)
+4. [Meaning is the Fuel](#4-meaning-is-the-fuel)
+5. [It's Okay to Be Confused](#5-its-okay-to-be-confused)
+6. [Use the Real Thing, not Book Language](#6-use-the-real-thing-not-book-language)
 
-Alright, here it goes:
 
-#### 1. Hardware-Accelerated Subconscious Learning
+#### 1. Like learning to bike
 
-A computer person might say that the skill of communication is "hardware-accelerated" in our brains. It's like a GPU in a computer that can only do one thing: graphics, but it does it very well [\[7\]](#footnotes). 
+We have specialized circuits in our brain for acquiring language, and true learning only happens when you engage them.
 
-The only language learning that works is one that taps into this.
+A tech person would say that the skill of communication is "hardware-accelerated" in our brains. It's like a GPU in a computer that can only do one thing - graphics - but does it very fast [\[7\]](#footnotes). 
 
-What are the consequences of that? For one thing, true language acquisition is completely subconscious process. 
+What are the consequences of that? For one thing, all the heavy lifting in language acquisition is completely subconscious. 
 
-It's akin to learning to ride a bike. It's about giving your subconscious the time and opportunity to figure things out. Your part is to just keep trying and "getting on the bike" and other than that, get out of the way and trust the process.
+It's akin to learning to ride a bike. It's about giving your subconscious the time and opportunity to figure things out on its own. Your part is to just keep trying and "getting on the bike" and other than that, get out of the way and trust the process.
 
 Consciously studying _about_ the language (grammar, phonetics) helps about as much as physics lectures help you ride a bike.
 
 That is, not that much, especially for kids and beginners [\[2, 3, 5\]](#references).
 
-#### 2. Comprehensible Input First
+#### 2. Input Before Output
 
 I think this particular point was the most counter-intuitive and surprising.
 
-Brain studies suggest there is fundamentally only one way we acquire language: by practicing understanding of the "**input**": reading and listening.
+Brain studies suggest there is fundamentally only one way we acquire language: by practicing understanding of the _input_: reading and listening.
 
-Surprisingly, it looks like producing language **output** —speaking and writing— are not separate skills, but are actually to a large degree powered by the  skill of **input** comprehension as well.
+Surprisingly, it looks like producing language _output_ —speaking and writing— are not separate skills, but are actually largely powered by the  skill of _input_ comprehension as well.
 
-If language acquisition were a house, understanding input is building the foundation, and the ability to generate output is putting up the roof.
+If language acquisition were a house, understanding _input_ is building the foundation, and the ability to generate output is putting up the roof.
 
-That means that spending too much time on output before input comprehension is on sufficiently solid ground is overrated.
+That means that spending too much time on output before the foundation of _input_ understanding is built is overrated.
 
 Another aspect of this is that it's a good idea to hold off on constantly testing and evaluating how well a kid is doing. Soft and squishy biological things like our brains do not have progress bars that need to go to 100%.
 
 One manifestation of this dynamic is that when babies learn their first language, they have a long "silent period" where they understand a great deal but speak very little [2].
 
-This counter-intuitive point is somewhat hard to apply in practice for social reasons: when a person is watching cartoons, for example, and not being barraged with output exercises all the time, **it just doesn't LOOK like she's learning**.
+This counter-intuitive point is somewhat hard to apply in practice for social reasons: when a person is watching cartoons, for example, and not being barraged with output exercises all the time, _it doesn't look like she's learning_.
 
 She's just not suffering enough.
 
-#### 3. Misleading Context
+#### 3. Communication Tool
 
 Understanding other people is an instinct at the core of being human. Harnessing this superpower is the only path to acquiring another language.
 
-Yet, the important distinction is that the instinct is for **using language to UNDERSTAND PEOPLE**, not to do well on conjugation quizzes.
+Yet, the important distinction is that the instinct is for _using language to undertsand other people_, not to do well on conjugation quizzes.
 
-This is not how a second language is often used in a school classroom context, for example, where it's not a tool to communicate but rather a peculiar activity one is expected to do to please the adults.
+This is not how a second language is used in a school classroom, for example, where it's not a tool to communicate but rather a peculiar activity a kid's asked to do to please the adults.
 
 To drive this point home, the second the teacher needs to say something truly important, she'll switch to English [1,4].
 
-#### 4. Understanding is the Reward
+#### 4. Meaning is the Fuel
 
-Our innate language learning ability is powerful and can overcome significant hurdles, but only if it's used as a means to get to what's catnip to our brains: the reward of understanding a **meaningful and intriguing message**.
+Our innate language learning ability is powerful and can overcome significant hurdles, but only if it's used as a means to get to what's catnip to our brains: the reward of _understanding a meaningful and intriguing message_.
 
 Let's spin up Duolingo or walk into a school French class.
 
@@ -110,117 +160,84 @@ _"Hier il pleuvait, mais aujourd'hui il fait beau"_.
 
 \- No, it's much, much less than that.
 
-When we work with sentence examples where the point is to translate them into English, the meaning becomes irrelevant. It's no longer about understanding a message that relates to the world around us, instead it's now this bizarre puzzle of how to convert one sequence of symbols into another.
+When we work with sentence examples where the point is to translate them into English, the meaning becomes irrelevant. It's no longer about understanding a message that relates to the world around us, Instead it's now this bizarre puzzle of how to convert one sequence of symbols into another.
 
-Kids are wired to be great at mapping words into meaning. Doing puzzles where you map words to some other words is not that:
+Kids are wired to be great at mapping words to meaning. Doing puzzles where you map words to some other words is not that:
 
 ![Img](/img/rain.png)
 
 Imagine [Professor Pavlov](https://en.wikipedia.org/wiki/Classical_conditioning) putting his mind to devise another cruel experiment: conditioning his poor dogs to become bored and zone out at the first sounds of French. How would you do it?
 
-You would flood them with sentences that mean nothing.
+You would flood them with sentences that mean nothing in particular.
 
-#### 5. Exposure to Authentic Language
 
-It's often pointed out that naturally spoken French is so different from "textbook French" that it's reasonable to treat them as two separate languages:
+#### 5. It's Okay to Be Confused
+In a class, not understanding every word is treated like a failure. 
 
-- **Spoken French**. The language millions of people use to communicate.
-- **Textbook French**. A dead language for books and exercises. Like Latin.
+But in reality, guessing from context and "winging it" is a core part of language acquisition. 
+
+We do it constantly in our native language too, mostly unconsciously. 
+
+Getting comfortable with ambiguity is part of the process. The impulse to stop and dissect every sentence you don't fully understand is counterproductive.
+
+#### 6. Use the Real Thing, not Book Language
+It's often pointed out that naturally spoken French is so different from textbook French that it's reasonable to treat them as two separate languages:
+
+- _Spoken French_. The language millions of people use to communicate.
+- _Textbook French_. A dead language for books and exercises. Like Latin.
 
 Which one's worth it? The answer is obvious.
 
 And yes, if you just take any random utterance from the street said by one native to another in their natural habitat of, say, France or Quebec, it won't be good learning material.
 
-But that's true for any language.
 
-Language used in kids' TV shows is one example of great learning material to practice the "spoken language French."
+
+But that's true for any language:
+
+![Img](/img/hotfuzz.jpg)
+
+Language used in kids' TV shows is one example of great learning material to practice that real deal: _Spoken French_.
 
 When kids' TV shows are produced, millions of dollars are at stake. Hundreds of people work on a show for years. People's careers and mortgages are on the line.
 
 You can be sure they've made certain the show is understandable to French-speaking children of various ages and levels of language mastery.
 
+The cinematography and voice acting are often brilliant, memorable and impactful. 
+
 Why not use those?
 
 
-Still, since everyone's teaching textbook French first, it cannot be that one-sided, right? What are the arguments in favour of doing things right and starting with "textbook French"?
+Still, it cannot be that one-sided, right? What does _Textbook French_ have going for it?
 
-Many of these arguments resemble those in favour of teaching Latin. We're told that this is the only "true" version. We get to hear arguments involving people who died a long time ago. We are told that it's how things have always been done. We hear that the "ne" in "Je ne sais pas" is important because it comes from Latin negation, so it must live there forever. We are told that those who mumble "Schpaah" instead are despicable, uncultured low-lives who are wrong in their ways.
+Most arguments about the importance of _Textbook French_ are weak. They sound like arguments for learning Latin.  We get to hear arguments involving people who died a long time ago. We are told that it's how things have always been. We hear that the "ne" in _"Je ne sais pas"_ must live there forever because it comes from Latin negation. And that is why those who mumble _"Ch'pas"_ instead are despicable, uncultured low-lives we all must look down upon.
 
-If you cast all this garbage aside, the only potentially solid argument is that **spoken French**, like any other oral language, doesn't have a writing system that fits its needs.
+If you cast all this garbage aside, the only potentially solid argument is that _Spoken French_, like any other purely _oral language_, doesn't have a proper writing system that serves its needs.
 
 But let's be honest, no form of French does.
 
-#### 6. Winging It Is Part of the Process
-
-In traditional language classes, there's a focus on catching a student who hasn't really understood every part of the language input. The student must be called out and face consequences for this "crime."
-
-It turns out that not understanding everything—and not obsessing over it—is an integral part of how our brains work.
-
-We do this all the time, and, for one more reason to leave the learner alone, we do it mostly unconsciously [1,2].
 
 # **Frenchirix**
 
-This background informs what I am trying to make with Frenchirix:
-
-#### 1. Design based on science
-First and foremost, the idea is to design for what we know to actually work for language learning, not something that's there just because it meets people's expectations of what language learning should look like.
-
-In particular, I want to try come up with things that the science points at as good ideas, but other educational resources do not do.
-
-What does it mean?
-
-Not to waste time with spelling and all that grammar stuff is the most obvious thing, but it's kinda obvious anyway. 
-
-What else then? Right now, the best I was able to come up with are the mini-games you see on the website, but I am not particularly happy with them either. There must be some better ways to do that, if we think about it well enough. I just don't see them yet. 
-
-Do you have any suggestions? If so, please let me know. 
-
-#### 2. Design driven by feedback
-I am building this first and foremost for my kids.
-
-The app's design is driven by the feedback I get from them using the app. 
-
-Numerous times now, I had the expereince of something in Frenchirix turning out working in a completely different way than I expected.
-
-So this feedback's really helpful in getting the direction of the development grounded. 
+So, I am working on this small web app called [Frenchirix](https://frenchirix.borzov.ca/).
 
 
-#### 3. Practicing Comprehensible Input
-The app is specifically focused on helping kids practice understanding audio input of native French media content. 
-
-Just making a tool that helps with this particular thing and does it well and properly would be awesome.
-
-I will try not to get distracted by other things, no matter how shiny.
-
-#### 5. Spaced Repetition
-
-The point is to use the power of spaced repetition.
-
-That's what gamification mechanic I added is trying to do: to encourage daily practice.
-
-The goal is to get the kids to spend three to five minutes working through the same dialogue on four or five occasions, spaced two to three days apart.
+The main idea is simple: use the French version of a TV show your kid already loves. This way, the dialogue is no longer a bunch of foreign words slapped together; it carries the story the kid is immersed in—the jokes, the emotions the characters experience. The context is already in their head, so the new French words have something to stick to.
 
 
-#### 6. Anchor to Meaning, Not Other Words
-
-Using French versions of shows your child already loves in English is our golden ticket.
-
-To the kid, that means the dialogue is no longer a bunch of foreign words slapped together: words carry a story she's immersed in, the jokes, the emotions that  the characters experience.
-
-The French dialogue they see in the app is soaked in this context that already lives in their brains.
-
-Right now this is the dialogue from  [this nice French cartoon TV show they like](https://www.netflix.com/ca/title/81316606).
+Right now, it uses dialogue from  [Asterix & Obelix: The Big Fight](https://www.netflix.com/ca/title/81316606) [\[6\]](#footnotes), this brilliant French cartoon TV show they like.
 
 
-#### 7. Avoid Getting Stuck
+Here’s the plan:
 
-In the mini-game design, it's important to avoid situations where a kid gets stuck and frustrated.
+* _It’s a spaced repetition system for TV shows._ The goal is about five minutes of practice a day, a few times a week. That’s the sweet spot: enough to actually work, but not so much that it becomes a chore. The app keeps track of what to review and when.
 
-For example, in a mini-game where words from a scene must be matched to their translations, the full dialogue is also presented on the same page. So the word translations (the answer keys, if you will) can be viewed in the given context with only a few taps.
+* _It’s for re-exposure, not for tests._ The mini-games are just an excuse to go over the dialogue again. The answers are always somewhere on the same page, so if you forgot something you will still be able to pass it, it will just take a bit more taps and concentration. This means kids never get stuck and frustrated. The point is an excuse to get another exposure, not to get you to pass a quiz.
 
-That means that any mini-game can be solved easily without prior knowledge of the relevant French; it will only take a little bit longer.
+* _I build it for my kids first._ This means I get daily, honest feedback. I’ve had many ideas that I thought are clever, but turned out not to  work. And the other way around. The app's design is guided by this reality check that keeps the project grounded.
 
-The point is to re-expose the child to meaningful French, not to test them.
+* _It focuses on one thing: understanding real spoken French_. Frenchirix is only  for practicing the comprehension of real, native media. Doing this one thing well is the only goal.
+
+That’s pretty much it. I’m trying to apply what the science says works, not what people expect language learning to look like.
 
 
 #### That's all, folks!
@@ -240,5 +257,6 @@ If you have any feedback, or better ideas, please email me at [d@borzov.ca](emai
 
 ## Footnotes
 
-6. Since some people were wondering: yes, the website currently uses some dialogue lines from a Netflix TV show as language examples for educational purposes. As a non-commercial educational website, this use fully meets the conditions of the "fair use" doctrine in the US and "fair dealing" in Canada. Still, we all know that this has never stopped some of those companies with lawyers that need to find ways to justify their salaries. Therefore, the idea is to focus on building the data processing pipeline that will work for any media, not just the specific one currently used. This way, the second that specific copyright owners express disagreement with this particular use, the public version of this website will switch to something else.
-7. And like with GPUs, things are actually much more complicated, and I do not claim to understand all this all that much. But I have gotta say that this is an oversimplification to get a point across.   
+6. The website currently uses some dialogue lines from a Netflix TV show as language examples for educational purposes. As a non-commercial educational website, this use fully meets the conditions of the "fair use" doctrine in the US and "fair dealing" in Canada. Still, we all know that this has never stopped some of those companies with lawyers that need to find ways to justify their salaries. Therefore, the idea is to build a data processing pipeline that will work for any video media, not just the one currently used, not just the specific one currently used. This way, the second that specific copyright owners express disagreement with this particular use, the public version of this website will switch to something else.
+7. And like with GPUs, things are actually much more complicated, and I do not claim to understand all this all that much. But I have gotta say that this is an oversimplification to get a point across.
+8. Well, I only read the book that was written to be fun to read (Pinker's). I skimmed and used an LLM to get the chapter summaries for Hummel's.   
