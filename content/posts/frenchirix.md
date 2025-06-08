@@ -54,7 +54,7 @@ So I asked around and got in touch with people with degrees in linguistics, educ
 
 Much of it was academics arguing with one another. Like they all mention [Noam Chomsky](https://en.wikipedia.org/wiki/Noam_Chomsky) and tell in great detail how wrong he is about everything. But I didn't particularly care about all that stuff. 
 
-But beneath the drama, I found exactly what I was looking for: a set of things, proven to work, that I never would have arrived at on my own.
+But beneath the drama, I found what I was looking for: a set of things, proven to work, that I never would have arrived at on my own.
 
 With that new understanding, I set out to the ultimate goal: apply this to help my kids. 
 
@@ -66,9 +66,9 @@ It's a double-punch:
 * regular exposure to enjoyable French media that they pick themselves,  
 * spaced repetition of that same content.
 
- Altogether, this could be only 10-15 minutes a day; but if it's regular, the impact for the money is huge.
+ Altogether, this could be only 10-15 minutes a day; but if it's regular, the impact is outsized.
 
-Getting them to watch more TV was easy: I did not get any complaints for extra screentime. 
+Getting them to watch more TV was easy: I did not get any complaints for the extra screentime. 
 
 The hard part was doing the spaced repetition right:
 *  You want to track what you brushed up on and when, 
