@@ -218,24 +218,21 @@ But let's be honest, no form of French does.
 
 # **Frenchirix**
 
-So, I am working on this small web app called [Frenchirix](https://frenchirix.borzov.ca/).
+So, I'm working on this small web app called [Frenchirix](https://frenchirix.borzov.ca/).
 
+The main idea is simple: use the French version of a TV show your kid already loves. When a kid already loves a show, the emotions do the heavy lifting. Laughing at a joke or feeling for a character opens a gate, and while that gate is open, the French dialogue sneaks in almost unnoticed. It’s no longer a bunch of foreign words slapped together; it’s part of an experience the kid already cares about.
 
-The main idea is simple: use the French version of a TV show your kid already loves. This way, the dialogue is no longer a bunch of foreign words slapped together; it carries the story the kid is immersed in—the jokes, the emotions the characters experience. The context is already in their head, so the new French words have something to stick to.
-
-
-Right now, it uses dialogue from  [Asterix & Obelix: The Big Fight](https://www.netflix.com/ca/title/81316606) [\[6\]](#footnotes), this brilliant French cartoon TV show they like.
-
+Right now, it uses dialogue from [Asterix & Obelix: The Big Fight](https://www.netflix.com/ca/title/81316606) [\[6\]](https://www.google.com/search?q=%23footnotes), a brilliant French cartoon TV show they like.
 
 Here’s the plan:
 
-* _It’s a spaced repetition system for TV shows._ The goal is about five minutes of practice a day, a few times a week. That’s the sweet spot: enough to actually work, but not so much that it becomes a chore. The app keeps track of what to review and when.
+  * *It’s a spaced repetition system for TV shows.* The aim is about five minutes of practice a day, a few times a week. That’s the sweet spot: enough to actually work, but not so much that it becomes a chore. The app keeps track of what to review and when.
 
-* _It’s for re-exposure, not for tests._ The mini-games are just an excuse to go over the dialogue again. The answers are always somewhere on the same page, so if you forgot something you will still be able to pass it, it will just take a bit more taps and concentration. This means kids never get stuck and frustrated. The point is an excuse to get another exposure, not to get you to pass a quiz.
+  * *It’s for re-exposure, not for tests.* The mini-games are just an excuse to go over the dialogue again. The answers are always on the same page, so if you forget something, you can still complete the exercise; it will just take a few more taps. This means kids never get stuck and frustrated. The point is getting another exposure, not passing a quiz.
 
-* _I build it for my kids first._ This means I get daily, honest feedback. I’ve had many ideas that I thought are clever, but turned out not to  work. And the other way around. The app's design is guided by this reality check that keeps the project grounded.
+  * *I'm building it for my kids first.* This means I get daily, honest feedback. I’ve had many ideas that I thought were clever but turned out not to work, and vice-versa. The app's design is guided by this daily reality check, which keeps the project grounded.
 
-* _It focuses on one thing: understanding real spoken French_. Frenchirix is only  for practicing the comprehension of real, native media. Doing this one thing well is the only goal.
+  * *It focuses on one thing: understanding real spoken French.* Frenchirix is only for practicing the comprehension of real, native media. Doing this one thing well is the only goal.
 
 That’s pretty much it. I’m trying to apply what the science says works, not what people expect language learning to look like.
 
