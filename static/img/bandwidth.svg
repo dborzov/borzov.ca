@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 330" width="720" height="330" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="720" height="330" fill="#fff"/>
+
+  <!-- Conscious reasoning -->
+  <text x="20" y="32" font-size="17" font-weight="600" fill="#222">Conscious reasoning (prefrontal cortex)</text>
+  <text x="20" y="52" font-size="13" fill="#777">Slow, low-bandwidth, already busy, and still growing in kids. This is where translation happens.</text>
+  <g font-size="12" fill="#555">
+    <rect x="20" y="72" width="170" height="22" rx="11" fill="#f3f3f3" stroke="#ccc"/>
+    <text x="105" y="87" text-anchor="middle">math homework</text>
+    <rect x="34" y="98" width="170" height="22" rx="11" fill="#f3f3f3" stroke="#ccc"/>
+    <text x="119" y="113" text-anchor="middle">where are my shoes?</text>
+    <rect x="20" y="124" width="170" height="22" rx="11" fill="#f3f3f3" stroke="#ccc"/>
+    <text x="105" y="139" text-anchor="middle">be nice to your sister</text>
+    <rect x="34" y="150" width="170" height="22" rx="11" fill="#fff3e0" stroke="#fb8c00"/>
+    <text x="119" y="165" text-anchor="middle" fill="#e65100">il pleuvait = it was raining</text>
+  </g>
+  <path d="M206,96 L226,116 L206,140" fill="none" stroke="#bbb" stroke-width="2"/>
+  <rect x="230" y="110" width="470" height="14" rx="7" fill="#eee" stroke="#aaa" stroke-width="1.5"/>
+  <circle cx="300" cy="117" r="4" fill="#fb8c00"/>
+  <circle cx="480" cy="117" r="4" fill="#999"/>
+
+  <!-- Language instinct -->
+  <text x="20" y="212" font-size="17" font-weight="600" fill="#222">The language instinct</text>
+  <text x="20" y="232" font-size="13" fill="#777">Deep, fast, enormous bandwidth. But it links words to the world and to people, not to other words.</text>
+  <rect x="20" y="248" width="680" height="70" rx="16" fill="#e3f2fd" stroke="#1e88e5" stroke-width="1.5"/>
+  <g font-size="14" fill="#1565c0">
+    <text x="45" y="273">il pleut</text>
+    <text x="70" y="303">regarde !</text>
+    <text x="150" y="281">mon ami</text>
+    <text x="190" y="306">c'est quoi ?</text>
+    <text x="250" y="270">vert</text>
+    <text x="300" y="296">on y va</text>
+    <text x="370" y="275">attention !</text>
+    <text x="395" y="307">le chat</text>
+    <text x="460" y="288">j'ai faim</text>
+    <text x="530" y="270">la pluie</text>
+    <text x="545" y="304">trop drôle</text>
+    <text x="620" y="283">viens !</text>
+  </g>
+</svg>

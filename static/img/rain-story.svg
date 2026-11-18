@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" width="720" height="300" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#888"/>
+    </marker>
+  </defs>
+  <rect width="720" height="300" fill="#fff"/>
+  <line x1="360" y1="20" x2="360" y2="280" stroke="#ddd" stroke-width="1.5" stroke-dasharray="5 5"/>
+
+  <!-- Left: translation drill -->
+  <text x="180" y="28" text-anchor="middle" font-size="17" font-weight="600" fill="#222">A translation drill</text>
+  <rect x="50" y="62" width="260" height="46" rx="8" fill="#f5f5f5" stroke="#aaa" stroke-width="1.5"/>
+  <text x="180" y="91" text-anchor="middle" font-size="16" fill="#222">Hier il pleuvait…</text>
+  <line x1="180" y1="112" x2="180" y2="148" stroke="#888" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="192" y="135" font-size="12" font-style="italic" fill="#999">translate</text>
+  <rect x="50" y="152" width="260" height="46" rx="8" fill="#f5f5f5" stroke="#aaa" stroke-width="1.5"/>
+  <text x="180" y="181" text-anchor="middle" font-size="16" fill="#222">Yesterday it was raining…</text>
+  <text x="180" y="250" text-anchor="middle" font-size="14" fill="#444">Words matched to other words.</text>
+  <text x="180" y="272" text-anchor="middle" font-size="14" fill="#888">Nobody gets wet.</text>
+
+  <!-- Right: a story -->
+  <text x="540" y="28" text-anchor="middle" font-size="17" font-weight="600" fill="#222">A story</text>
+  <g fill="#b0bec5">
+    <circle cx="492" cy="76" r="18"/>
+    <circle cx="520" cy="64" r="24"/>
+    <circle cx="552" cy="70" r="21"/>
+    <circle cx="578" cy="80" r="15"/>
+    <rect x="480" y="76" width="106" height="20" rx="10"/>
+  </g>
+  <g stroke="#42a5f5" stroke-width="2.5" stroke-linecap="round">
+    <line x1="472" y1="104" x2="468" y2="116"/>
+    <line x1="500" y1="104" x2="496" y2="116"/>
+    <line x1="528" y1="106" x2="524" y2="118"/>
+    <line x1="556" y1="104" x2="552" y2="116"/>
+    <line x1="584" y1="102" x2="580" y2="114"/>
+    <line x1="460" y1="138" x2="456" y2="150"/>
+    <line x1="458" y1="176" x2="454" y2="188"/>
+    <line x1="470" y1="208" x2="466" y2="220"/>
+    <line x1="576" y1="178" x2="572" y2="190"/>
+    <line x1="596" y1="200" x2="592" y2="212"/>
+    <line x1="624" y1="182" x2="620" y2="194"/>
+    <line x1="648" y1="200" x2="644" y2="212"/>
+  </g>
+  <!-- umbrella -->
+  <path d="M482,150 A40,32 0 0 1 562,150 Z" fill="#fb8c00"/>
+  <line x1="522" y1="118" x2="522" y2="114" stroke="#555" stroke-width="2"/>
+  <line x1="522" y1="150" x2="522" y2="190" stroke="#555" stroke-width="2.5"/>
+  <!-- kid -->
+  <circle cx="510" cy="166" r="10" fill="#f2c9a0"/>
+  <path d="M498,178 L522,178 L526,212 L494,212 Z" fill="#1e88e5"/>
+  <line x1="519" y1="186" x2="522" y2="186" stroke="#f2c9a0" stroke-width="4" stroke-linecap="round"/>
+  <line x1="503" y1="212" x2="503" y2="228" stroke="#555" stroke-width="3"/>
+  <line x1="517" y1="212" x2="517" y2="228" stroke="#555" stroke-width="3"/>
+  <ellipse cx="512" cy="232" rx="54" ry="5" fill="#bbdefb"/>
+  <!-- speech bubble -->
+  <rect x="572" y="118" width="104" height="38" rx="12" fill="#fff" stroke="#555" stroke-width="1.5"/>
+  <path d="M584,155 L566,168 L596,155" fill="#fff" stroke="#555" stroke-width="1.5" stroke-linejoin="round"/>
+  <line x1="585" y1="155" x2="595" y2="155" stroke="#fff" stroke-width="3"/>
+  <text x="624" y="143" text-anchor="middle" font-size="16" font-weight="600" fill="#222">Il pleut !</text>
+  <text x="540" y="258" text-anchor="middle" font-size="14" fill="#444">The word lands on the rain.</text>
+  <text x="540" y="280" text-anchor="middle" font-size="14" fill="#888">It's only a story, but your brain gets wet.</text>
+</svg>

@@ -51,6 +51,10 @@ Tired of dramatic volume swings in modern movies? Trying to watch something with
 # Words in specific order
 
 
+#### [*June 2025* Frenchirix and the Research on How We Learn Languages](/posts/frenchirix/)
+
+I knew from my own experience that many common ways to learn a language feel productive but are a waste of time. To help my kids with French without repeating my mistakes, I went looking for scientific evidence of what actually works. This post is a summary of some counter-intuitive principles I found, and how we are using them at home with Frenchirix.
+
 #### [*Feb 2025* How does serene-audio-mode work?](/posts/serene/)
 
 Getting into the weeds of the audio filtering algorithm used by `serene-audio-mode` (see above).

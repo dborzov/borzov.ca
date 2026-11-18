@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" width="720" height="300" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555"/>
+    </marker>
+    <marker id="arrg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2e7d32"/>
+    </marker>
+  </defs>
+  <rect width="720" height="300" fill="#fff"/>
+  <line x1="360" y1="20" x2="360" y2="280" stroke="#ddd" stroke-width="1.5" stroke-dasharray="5 5"/>
+
+  <!-- Left: lookup table -->
+  <text x="180" y="32" text-anchor="middle" font-size="17" font-weight="600" fill="#222">What the question assumed</text>
+  <text x="180" y="52" text-anchor="middle" font-size="13" fill="#777">a word is a pointer to another word</text>
+  <g opacity="0.35">
+    <path d="M155,74 L205,74 L198,132 L162,132 Z" fill="none" stroke="#999" stroke-width="2"/>
+    <path d="M204,86 C224,86 224,118 200,116" fill="none" stroke="#999" stroke-width="2"/>
+    <line x1="135" y1="134" x2="225" y2="134" stroke="#999" stroke-width="2"/>
+  </g>
+  <text x="180" y="160" text-anchor="middle" font-size="13" font-style="italic" fill="#999">the actual color: left out</text>
+  <rect x="50" y="200" width="100" height="44" rx="8" fill="#f5f5f5" stroke="#999" stroke-width="1.5"/>
+  <text x="100" y="228" text-anchor="middle" font-size="18" fill="#222">green</text>
+  <rect x="210" y="200" width="100" height="44" rx="8" fill="#f5f5f5" stroke="#999" stroke-width="1.5"/>
+  <text x="260" y="228" text-anchor="middle" font-size="18" fill="#222">verde</text>
+  <line x1="154" y1="222" x2="206" y2="222" stroke="#555" stroke-width="2" marker-start="url(#arr)" marker-end="url(#arr)"/>
+  <text x="100" y="266" text-anchor="middle" font-size="12" fill="#888">English</text>
+  <text x="260" y="266" text-anchor="middle" font-size="12" fill="#888">Spanish</text>
+
+  <!-- Right: grounded -->
+  <text x="540" y="32" text-anchor="middle" font-size="17" font-weight="600" fill="#222">How the boy stored it</text>
+  <text x="540" y="52" text-anchor="middle" font-size="13" fill="#777">both words point at the color itself</text>
+  <path d="M515,74 L565,74 L558,132 L522,132 Z" fill="#43a047" stroke="#2e7d32" stroke-width="2"/>
+  <path d="M564,86 C584,86 584,118 560,116" fill="none" stroke="#2e7d32" stroke-width="5"/>
+  <line x1="495" y1="134" x2="585" y2="134" stroke="#8d6e63" stroke-width="3" stroke-linecap="round"/>
+  <rect x="400" y="200" width="100" height="44" rx="8" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="450" y="228" text-anchor="middle" font-size="18" fill="#222">green</text>
+  <rect x="580" y="200" width="100" height="44" rx="8" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="630" y="228" text-anchor="middle" font-size="18" fill="#222">verde</text>
+  <line x1="465" y1="198" x2="512" y2="144" stroke="#2e7d32" stroke-width="2.5" marker-end="url(#arrg)"/>
+  <line x1="615" y1="198" x2="568" y2="144" stroke="#2e7d32" stroke-width="2.5" marker-end="url(#arrg)"/>
+  <text x="450" y="266" text-anchor="middle" font-size="12" fill="#888">English</text>
+  <text x="630" y="266" text-anchor="middle" font-size="12" fill="#888">Spanish</text>
+</svg>
