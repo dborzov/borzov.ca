@@ -10,14 +10,14 @@ title = "Frenchirix and the Research on How We Learn Languages"
 {{< tldr >}}
 **TL;DR:** What academic research on language learning tells us:
 
-* **Like learning to bike.** Language is acquired subconsciously, by brain machinery built for it. Studying grammar helps about as much as physics lectures help you ride a bike.
-* **Input before output.** Understanding what you hear and read is what builds a language. Speaking and writing grow out of that, so don't rush them, and don't keep testing.
+* **Like learning to bike.** Language is acquired subconsciously, by brain machinery built for it. Studying things like grammar matters, but its value is like that of a physics explanation when you're learning to ride a bike: it helps you know what to notice. But the bulk of the work is getting back on that bike over and over, until you start falling a bit less.
+* **Input before output.** That brain machinery activates most easily when you hear or read something in the target language that you can at least partially understand. So getting more exposure to it, under any pretext, is where it's at. Speaking and writing grow out of that, so don't rush them, and don't keep testing.
 * **Words map to the world.** The instinct we're tapping into is for understanding people, not for passing conjugation quizzes.
 * **Stories make it real.** The brain learns from messages it cares about. Example sentences that mean nothing mostly teach boredom.
 * **It's okay to be confused.** Guessing from context is how acquisition works. Don't stop to dissect every sentence.
 * **Use the real thing.** Learn the French people actually speak, not textbook French. Kids' TV shows are excellent material.
 
-And what I did with it: [Frenchirix](#frenchirix), a small app for spaced repetition of dialogue from an unadapted French TV show.
+And what I did with it: [Frenchirix](#frenchirix), a small app for spaced repetition of dialogue from an unadapted French TV show. Its code is [open source](https://github.com/dborzov/frenchirix-open-source).
 {{< /tldr >}}
 
 Table of Contents:
@@ -35,13 +35,27 @@ Table of Contents:
 
 ### Introduction
 
-I wanted to help my kids with their French, and I realized I didn't know how.
+My kids are in French immersion. They are awesome and generally ace the hell out of that French, but I've also watched them run into the same potholes I hit as a kid.
 
-That was odd, because I've learned two second languages as an adult. But the main thing that experience taught me was distrust.
+It made me think back to my childhood years of learning English in school. If you added up all the hours of "instruction and practice" I sat through, you would expect me to be able to read Shakespeare with ease.
 
-Language learning is full of traps. Some kinds of work look exactly like what studying is supposed to look like, yet much of the effort spent on them is wasted. I know because I wasted it.
+But, as you can guess, the reality was less impressive. Looking back, I realize that a lot of those hours ended up being pointless busywork.
 
-Wasting my own time on busywork is one thing. Making my kids waste theirs is another. I didn't want to do that.
+To be fair, my kids have it much better. We've seen some of the teachers at their school go out of their way to do an incredible job for their students. Our family is very grateful to them for it.
+
+But individual teachers aside, I got the impression that the way schools approach language learning is still the same rigid system I remember.
+
+For some reason, that got to me. As a parent, the last thing you want is for your kids to go through the same thing you did. You want them to skip the bad parts.
+
+So I started wondering if there was anything useful I could do about it.
+
+But as I kept thinking about it, I was surprised to realize I didn't really know how.
+
+This was odd, because I'd ended up having to learn two languages as an adult. In theory, this experience alone should have taught me what works and what doesn't.
+
+But if anything, the main thing that experience had taught me was distrust.
+
+Language learning is full of traps. Some kinds of work look exactly like what studying is supposed to look like, yet much of the effort spent on them is wasted.
 
 In most things, the more experience you have, the more confident you get. Language learning was different. I was surest of how it worked at the start, before I'd tried anything. Then I spent years at it, and what I mostly came away with was a deep respect for how much more there is to it than meets the eye.
 
@@ -51,9 +65,9 @@ After all those years, it was still alchemy to me: mysterious, murky, nothing qu
 
 Then I realized the way out was the same as it was for alchemy: chemistry.
 
-So I went looking for what's actually known: findings backed by evidence, not just confident opinions.
+So I went looking for what's actually known: findings backed by evidence and studies, not opinions and impressions.
 
-This time I did the groundwork. I asked people with degrees in linguistics, education, and second language acquisition what I should read, and got a list [\[1–5\]](#references). Then I read the books they recommended, and used AI to get through the denser ones [\[7\]](#footnotes).
+I figured that with all these AI tools, I would be able to do it right this time. I asked people with degrees in linguistics, education, and second language acquisition what I should read, and got a list [\[1–5\]](#references). Then I read the books they recommended, and used AI to summarize the denser ones [\[7\]](#footnotes).
 
 What follows is what I took from them: the handful of principles most of that research agrees on, several of which are pretty counter-intuitive.
 
@@ -249,6 +263,14 @@ Here's how it works:
 
 That's pretty much it. I'm trying to apply what the science says works, not what people expect language learning to look like.
 
+**The code is open source.** It's on GitHub as [frenchirix-open-source](https://github.com/dborzov/frenchirix-open-source), under the MIT license. It has two parts:
+
+  * *A pipeline that turns your own video files into practice material.* Point it at, say, the episodes of a TV show: it picks out short dialogue scenes, transcribes them, and aligns every word to the audio, so any word or expression can be replayed on its own.
+
+  * *The web app itself*, with the practice puzzles and the spaced repetition.
+
+It doesn't come with any show's material, so you build the content from videos you have. It was built for French learned through English, but the approach works for any language pair. It's a working project rather than a polished product, so expect to read the docs and change some code.
+
 
 #### That's all, folks!
 
@@ -270,4 +292,4 @@ If you have any feedback, or better ideas, please email me at [d@borzov.ca](mail
 
 7. Well, I only read the book that was written to be fun to read (Pinker's). I skimmed and used an LLM to get the chapter summaries for Hummel's.
 8. And like with GPUs, things are actually much more complicated, and I do not claim to understand all this all that much. But I have gotta say that this is an oversimplification to get a point across.
-9. The website currently uses some dialogue lines from a Netflix TV show as language examples for educational purposes. As a non-commercial educational website, this use fully meets the conditions of the "fair use" doctrine in the US and "fair dealing" in Canada. Still, we all know that this has never stopped some of those companies with lawyers that need to find ways to justify their salaries. Therefore, the idea is to build a data processing pipeline that will work for any video media, not just the specific one currently used. This way, the second that specific copyright owners express disagreement with this particular use, the public version of this website will switch to something else.
+9. The website currently uses some dialogue lines from a Netflix TV show as language examples for educational purposes. As a non-commercial educational website, this use fully meets the conditions of the "fair use" doctrine in the US and "fair dealing" in Canada. Still, we all know that this has never stopped some of those companies with lawyers that need to find ways to justify their salaries. Therefore, the idea is to build a data processing pipeline that will work for any video media, not just the specific one currently used. This way, the second that specific copyright owners express disagreement with this particular use, the public version of this website will switch to something else. That pipeline is now part of the [open-source release](https://github.com/dborzov/frenchirix-open-source).

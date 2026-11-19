@@ -31,6 +31,11 @@ Published peer-reviewed research papers:
 (also, see my [github account page](https://github.com/dborzov))
 
 
+#### [**frenchirix-open-source**: language practice from real, unadapted video.](https://github.com/dborzov/frenchirix-open-source)
+
+The code behind [Frenchirix](https://frenchirix.borzov.ca/). A pipeline extracts short dialogue scenes from video files of your choice (such as the episodes of a TV show) and aligns every word to the audio. A web app turns those scenes into listening practice with spaced repetition: every line is split into tappable words and expressions, each with its translation and its own looping audio, so real speech at full speed stays understandable. The reasoning behind the design is in the [blog post](/posts/frenchirix/) below.
+
+
 #### [**serene-audio-mode**: tone down explosions, crank up the dialogue.](https://github.com/dborzov/serene-audio-mode)
 
 Tired of dramatic volume swings in modern movies? Trying to watch something without disturbing the others? This tool selectively reduces the volume of loud, bass-heavy, and jarring sounds (explosions, gunfire, and aggressive musical beats), while leaving the rest (like dialogue) untouched. No more scrambling for the remote when a whisper is followed by an explosion that reverberates down your spine – just consistent, comfortable listening. 
